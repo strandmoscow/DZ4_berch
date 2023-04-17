@@ -152,7 +152,7 @@ def graph(Ra, Rb, Na, Nb, La, L_b):
 
 def graph_to_file(graph):
     print(graph.to_string())
-    graph.create_svg("graph.svg")
+    graph.create_png("graph.png")
 
 
 def graph_ls(graph, paths, la, lb):
