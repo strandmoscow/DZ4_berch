@@ -7,7 +7,7 @@ import re
 from tqdm import tqdm
 import modeling
 
-name, var, g = "Тэн Марина Миновна",	169,	5
+name, var, g = "Мягкова Екатерина Игоревна",	46,	    2
 n = var
 name_short = name.split(" ")[0] + " " + name.split(" ")[1][0] + ". " + name.split(" ")[2][0] + "."
 
@@ -150,10 +150,139 @@ def graph(Ra, Rb, Na, Nb, La, L_b):
     return graph, paths
 
 
-def graph_to_file(graph):
-    print(graph.to_string())
-    graph.create_png("graph.png")
+def graph_for_tex(Ra, Rb, Na, Nb, l_A, l_B):
+    al_A = Ra+Na
+    al_B = Rb+Nb
+    # GREEN STATE
+    graph = pydot.Dot("my_graph", graph_type="digraph", bgcolor="yellow")
+    graph.set_strict(True)
+    i = 0
 
+    # Start node
+    graph.add_node(pydot.Node("s" + str(Na) + str(Ra) + str(Nb) + str(Rb),
+                                  texlbl="$S^{" + str(Na) + str(Ra) + "}_{" + str(Nb) + str(Rb) + "}$",
+                                  style="filled", fillcolor="green", group=i))
+
+    now_line = ["s" + str(Na) + str(Ra) + str(Nb) + str(Rb)]
+
+    paths = dict()
+    paths["s" + str(Na) + str(Ra) + str(Nb) + str(Rb)] = [0, 0, 0]
+    p = 1
+
+    while len(now_line) > 0:
+        prev_line = now_line
+        now_line = []
+        i = i + 1
+
+        for node in prev_line:
+            nNa = int(node[1])
+            nRa = int(node[2])
+            nNb = int(node[3])
+            nRb = int(node[4])
+            if nRb > 0:
+                if "s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1) not in now_line:
+                    graph.add_node(pydot.Node("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1),
+                                                  texlbl="$S^{" + str(nNa) + str(nRa) + "}_{" + str(nNb) + str(nRb - 1) + "}$",
+                                                  group=i))
+                    # i = i + 1
+
+                    paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1)] = [p,
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][1],
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][2] + 1]
+                    p = p + 1
+
+                    now_line.append("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1))
+                if (al_A-(nNa+nRa)<al_B-(nNb+nRb-1)) or (al_A-(nNa+nRa) == al_B-(nNb+nRb-1) and l_A < l_B):
+                    print("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)+" больше b или инт выше" )
+                    graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                          "s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1),
+                                          color="green", label=" ", texlbl=f"${nNb}\\lambda_B,\\lambda_S$", len=1, weight=10, dir="both"))
+                else:
+                    graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                              "s" + str(nNa) + str(nRa) + str(nNb) + str(nRb - 1),
+                                              color="blue", label=" ", texlbl=f"${nNb}\\lambda_B$", len=1,
+                                              weight=10))
+            else:
+                graph.add_node(pydot.Node("s" + str(nNa) + str(nRa) + str(nNb - 1) + str(nRb),
+                                              texlbl="$S^{" + str(nNa) + str(nRa) + "}_{" + str(nNb - 1) + str(nRb) + "}$",
+                                              style="filled", fillcolor="red", group=i))
+                # i = i + 1
+
+                paths["s" + str(nNa) + str(nRa) + str(nNb - 1) + str(nRb)] = [-p,
+                    paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][1],
+                    paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][2] + 1]
+                p = p + 1
+
+                graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                          "s" + str(nNa) + str(nRa) + str(nNb - 1) + str(nRb),
+                                          color="green", label=" ", texlbl=f"${nNb}\\lambda_B,\\lambda_S$", len=1, weight=10,dir="both"))
+
+            if nRa > 0:
+
+                if "s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb) not in now_line:
+                    graph.add_node(pydot.Node("s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb),
+                                                  texlbl="$S^{" + str(nNa) + str(nRa - 1) + "}_{" + str(nNb) + str(nRb) + "}$",
+                                                  group=i))
+                    # i = i + 1
+
+                    paths["s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb)] = [
+                        p,
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][1] + 1,
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][2]]
+                    p = p + 1
+
+                    now_line.append("s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb))
+
+                if ((al_A - (nNa + nRa-1)) > (al_B - (nNb + nRb))) or (
+                        (al_A - (nNa + nRa-1)) == (al_B - (nNb + nRb)) and l_A > l_B):
+                    # print("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb) + " больше a или инт выше")
+                    graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                          "s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb),
+                                          color="green", label=" ", texlbl=f"${nNa}\\lambda_A,\\lambda_S$", len=1, weight=10,dir="both"))
+                else:
+                    graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                              "s" + str(nNa) + str(nRa - 1) + str(nNb) + str(nRb),
+                                              color="blue", label=" ", texlbl=f"${nNa}\\lambda_A$", len=1, weight=10))
+            else:
+                if nNa > 1:
+                    if "s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb) not in now_line:
+                        graph.add_node(pydot.Node("s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb),
+                                                      texlbl="$S^{" + str(nNa - 1) + str(nRa) + "}_{" + str(nNb) + str(nRb) + "}$",
+                                                      group=i))
+
+                        paths["s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb)] = [
+                            p,
+                            paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][1] + 1,
+                            paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][2]]
+                        p = p + 1
+
+                    now_line.append("s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb))
+
+                    if (al_A - (nNa-1 + nRa) > al_B - (nNb + nRb)) or (
+                            al_A - (nNa-1 + nRa) == al_B - (nNb + nRb) and l_A > l_B):
+                        # print("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb) + " больше a или инт выше")
+                        graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                              "s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb),
+                                              color="green", label=" ", texlbl=f"${nNa}\\lambda_A\\lambda_S$", len=1, weight=10,dir="both"))
+                    else:
+                        graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                              "s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb),
+                                              color="blue", label=" ", texlbl=f"${nNa}\\lambda_A$", len=1, weight=10))
+                else:
+                    graph.add_node(pydot.Node("s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb),
+                                              texlbl="$S^{" + str(nNa - 1) + str(nRa) + "}_{" + str(nNb) + str(nRb) + "}$",
+                                              style="filled", fillcolor="red", group=i))
+                    # i = i + 1
+                    paths["s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb)] = [
+                        -p,
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][1] + 1,
+                        paths["s" + str(nNa) + str(nRa) + str(nNb) + str(nRb)][2]]
+                    p = p + 1
+                    graph.add_edge(pydot.Edge("s" + str(nNa) + str(nRa) + str(nNb) + str(nRb),
+                                              "s" + str(nNa - 1) + str(nRa) + str(nNb) + str(nRb),
+                                              color="green", label=" ", texlbl=f"${nNa}\\lambda_A,\\lambda_S$", len=1, weight=10,dir="both"))
+
+    return graph, paths
 
 def graph_ls(graph, paths, la, lb):
     graph_ls = graph
@@ -233,17 +362,17 @@ def kolmogorov_0_tex(m):
     for i in range(m.shape[0]):
         s = s + "0 = "
         for j in range(m.shape[0]):
-            if i != j:
-                if m[j][i] >= 1:
-                    s = s + str(int(m[j][i])) + "P_{" + str(j) + "} (t) +"
-                if m[j][i] <= -1:
-                    s = s[:-1] + "-" + str(abs(int(m[j][i]))) + "P_{" + str(j) + "} (t) +"
-        for j in range(m.shape[0]):
-            if i != j:
-                if m[i][j] >= 1:
-                    s = s[:-1] + "-" + str(abs(int(m[i][j]))) + "P_{" + str(i) + "} (t) +"
-                if m[i][j] <= -1:
-                    s = s + str(int(m[i][j])) + "P_{" + str(i) + "} (t) +"
+            # if i != j:
+            if m[j][i] >= 1:
+                s = s + str(int(m[j][i])) + "p_{" + str(j) + "} +"
+            if m[j][i] <= -1:
+                s = s[:-1] + "-" + str(abs(int(m[j][i]))) + "p_{" + str(j) + "} +"
+        # for j in range(m.shape[0]):
+        #     if i != j:
+        #         if m[i][j] >= 1:
+        #             s = s[:-1] + "-" + str(abs(int(m[i][j]))) + "p_{" + str(i) + "} +"
+        #         if m[i][j] <= -1:
+        #             s = s + str(int(m[i][j])) + "p_{" + str(i) + "} +"
         s = s[:-1] + "\\\\ \n"
     s = s[:-4]
     return s
@@ -459,20 +588,38 @@ def MD(m):
     w_A, w_B = [Ra], [Rb]
 
     def find_lambda(line):
-        if np.sum(line) == l_S:
+        if abs(np.min(line)) == l_S:
             return [0, 0], [0, 0], [l_S, line.index(l_S)]
+        ls=[]
+        lb=[]
+        la=[]
+        flag=0
 
-        for i in range(0, len(line)):
-            if line[i] > 0:
-                if l_S in line:
-                    return [line[i], i], \
-                           [np.max(line[i + 1::]),
-                            line.index(np.max(line[i + 1::]))], \
-                           [l_S, line.index(l_S)]
+        for i in range(0, line.index(np.min(line))):
+            if line[i]>0:
+                ls.append(line[i])
+                ls.append(i)
+                flag=1
 
-                return [line[i], i], \
-                       [np.max(line[i + 1::]),
-                        line.index(np.max(line[i + 1::]))], [0, 0]
+        if flag==0:
+            ls=[0,0]
+
+        flag = 0
+        for i in range(line.index(np.min(line)), len(line)):
+            if line[i] > 0 and flag == 0:
+                lb.append(line[i])
+                lb.append(i)
+                flag = 1
+
+            if line[i] > 0 and flag == 1:
+                la.append(line[i])
+                la.append(i)
+
+        return lb, la, ls
+
+
+
+
 
     def F_t(l, y):
         return -np.log(1 - y) / l
@@ -508,15 +655,21 @@ def MD(m):
         if current_s == idx_s:
             # если одинаково поломались
             if Ra - w_A[-1] == Rb - w_B[-1]:
-                w_A.append(w_A[-1] + 1 * (l_a > l_b))
-                w_B.append(w_B[-1] + 1 * (l_b > l_a))
+                if l_a > l_b:
+                    w_A.append(w_A[-1] + 1)
+                else:
+                    w_B.append(w_B[-1] + 1)
             else:
-                w_A.append(w_A[-1] + 1 * (Ra - w_A[-1] > Rb - w_B[-1]))
-                w_B.append(w_B[-1] + 1 * (Rb - w_B[-1] > Ra - w_A[-1]))
+                if Ra - w_A[-1] > Rb - w_B[-1]:
+                    w_A.append(w_A[-1] + 1)
+                else:
+                    w_B.append(w_B[-1] + 1)
         else:
             # если ломаются
-            w_A.append(w_A[-1] - 1 * (current_s == idx_a))
-            w_B.append(w_B[-1] - 1 * (current_s == idx_b))
+            if current_s == idx_a:
+                w_A.append(w_A[-1] - 1)
+            else:
+                w_B.append(w_B[-1] - 1)
 
         # для дальнейшей отрисовки
         states_tr.append(current_s)
@@ -526,10 +679,13 @@ def MD(m):
             flag = True
             t_ust = current_t
             times = np.zeros(len(m))  # сбрасываем
-            w_A = w_A[-1::]
-            w_B = w_B[-1::]
+            d_A = w_A[-1]
+            d_B = w_B[-1]
+            w_A = [d_A]
+            w_B = [d_B]
 
         if flag * (current_t > t_ust * 2):
+            # print(w_A)
             return states_tr, t_tr, [np.mean(w_A), np.mean(w_B)], times / (current_t - t_ust), t_ust, current_t - t_ust
 
         last = times / current_t
@@ -580,11 +736,14 @@ if __name__ == "__main__":
     # Rb = 3
     l_S = (Na + Nb - (g % 3)) * (g + (n % 4))
 
+    if l_A == l_B:
+        l_A = l_A + 1
+
+
     graph_dot_ls, paths = graph(Ra - Na, Rb - Nb, Na, Nb, l_A, l_B)
+    graph_for_t, _ = graph_for_tex(Ra - Na, Rb - Nb, Na, Nb, l_A, l_B)
     # graph_dot_ls = graph_ls(graph_dot, paths, l_A, l_B)
     print(graph_dot_ls.to_string())
-    graph_tex = dot2tex.dot2tex(graph_dot_ls.to_string(), texmode="PSTricks", figonly=True, prog="circo")
-    graph_to_file(graph_dot_ls)
 
     matrix_np = matrix(l_A, l_B, l_S, graph_dot_ls)
     matrix = matrix_np.tolist()
@@ -595,6 +754,9 @@ if __name__ == "__main__":
     kzrs, snge, t_sr_v, p_pred_exp = imitational_modeling(matrix, 100, MD)
 
     t_sr_v_dsm, p_pred_exp_dsm, modeling_log = modeling.imitational_modeling(100, l_A, l_B, l_S, Ra, Rb, Na, Nb, pr=False)
+
+    # graph_dot_ls.del_edge("s3130", "s3131")
+    graph_tex = dot2tex.dot2tex(graph_for_t.to_string(), texmode="PSTricks", figonly=True, prog="dot") # neato, dot
 
     make_latex(var, g, name, name_short, l_A, l_B, l_S, Na, Nb, Ra, Rb, graph_tex, graph_dot_ls, matrix_np,
                kolmogorov_tex(matrix_np), kolmogorov_0_tex(matrix_np), p_pred, mu, kzrs, snge, t_sr_v, p_pred_exp,

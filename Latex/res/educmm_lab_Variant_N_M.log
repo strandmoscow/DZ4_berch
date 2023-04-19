@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.8)  17 APR 2023 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.8)  19 APR 2023 17:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -66,8 +66,8 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 \verbatim@out=\write3
-runsystem(echo 'write18-test-2023417987'>"educmm_lab_Variant_N_M.w18")...execut
-ed.
+runsystem(echo 'write18-test-20234191023'>"educmm_lab_Variant_N_M.w18")...execu
+ted.
 
 \instream=\read3
 runsystem(rm -- "educmm_lab_Variant_N_M.w18")...executed.
@@ -1514,11 +1514,11 @@ Overfull \hbox (12.31218pt too wide) in paragraph at lines 43--44
 
 [4]
 
-LaTeX Warning: Command \CYRA invalid in math mode on input line 71.
+LaTeX Warning: Command \CYRA invalid in math mode on input line 77.
 
 Missing character: There is no А in font cmr12!
 
-LaTeX Warning: Command \CYRV invalid in math mode on input line 71.
+LaTeX Warning: Command \CYRV invalid in math mode on input line 77.
 
 Missing character: There is no В in font cmr12!
 Missing character: There is no ; in font nullfont!
@@ -1582,166 +1582,94 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[5] [6]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[5] [6] [7] [8]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 530.
+nput line 586.
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 
-530.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmss.fd
+586.
+
+(/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-538.
+594.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [7]
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
+) [9]
+Underfull \hbox (badness 10000) in paragraph at lines 611--612
 
  []
 
-<Images/P_o.png, id=146, 722.7pt x 505.89pt>
+<Images/P_o.png, id=153, 722.7pt x 505.89pt>
 File: Images/P_o.png Graphic file (type png)
 <use Images/P_o.png>
-Package pdftex.def Info: Images/P_o.png  used on input line 560.
+Package pdftex.def Info: Images/P_o.png  used on input line 616.
 (pdftex.def)             Requested size: 463.7799pt x 324.64848pt.
-<Images/P_i.png, id=148, 722.7pt x 505.89pt>
+<Images/P_i.png, id=155, 722.7pt x 505.89pt>
 File: Images/P_i.png Graphic file (type png)
 <use Images/P_i.png>
-Package pdftex.def Info: Images/P_i.png  used on input line 566.
+Package pdftex.def Info: Images/P_i.png  used on input line 622.
 (pdftex.def)             Requested size: 463.7799pt x 324.64848pt.
-[8 <./Images/P_o.png>]
-<Images/R_t.png, id=171, 722.7pt x 505.89pt>
+[10 <./Images/P_o.png>]
+<Images/R_t.png, id=179, 722.7pt x 505.89pt>
 File: Images/R_t.png Graphic file (type png)
 <use Images/R_t.png>
-Package pdftex.def Info: Images/R_t.png  used on input line 578.
+Package pdftex.def Info: Images/R_t.png  used on input line 634.
 (pdftex.def)             Requested size: 463.7799pt x 324.64848pt.
- [9 <./Images/P_i.png>] [10 <./Images/R_t.png>]
-<Images/term.png, id=193, 722.7pt x 505.89pt>
+ [11 <./Images/P_i.png>] [12 <./Images/R_t.png>]
+<Images/term.png, id=201, 722.7pt x 505.89pt>
 File: Images/term.png Graphic file (type png)
 <use Images/term.png>
-Package pdftex.def Info: Images/term.png  used on input line 633.
+Package pdftex.def Info: Images/term.png  used on input line 689.
 (pdftex.def)             Requested size: 463.7799pt x 324.64848pt.
- [11]
-Overfull \hbox (29.4088pt too wide) detected at line 647
+
+[13]
+Overfull \hbox (29.39665pt too wide) detected at line 703
 []
  []
 
-<Images/BS.pdf, id=225, 324.25137pt x 506.85359pt>
+<Images/BS.pdf, id=234, 324.25137pt x 506.85359pt>
 File: Images/BS.pdf Graphic file (type pdf)
 <use Images/BS.pdf>
-Package pdftex.def Info: Images/BS.pdf  used on input line 661.
+Package pdftex.def Info: Images/BS.pdf  used on input line 717.
 (pdftex.def)             Requested size: 231.88995pt x 362.4749pt.
-[12 <./Images/term.png>]
+[14 <./Images/term.png>]
 LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-668.
+724.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 678--678
+Overfull \hbox (24.85077pt too wide) in paragraph at lines 746--746
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
 
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 680--680
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 682--682
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 688--688
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-[13 <./Images/BS.pdf>]
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 704--704
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 706--706
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 716--716
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 722--722
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 726--726
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 734--734
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 742--742
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 748--748
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 750--750
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
+[15 <./Images/BS.pdf>]
 Overfull \hbox (24.85077pt too wide) in paragraph at lines 754--754
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 756--756
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-[14]
 Overfull \hbox (24.85077pt too wide) in paragraph at lines 762--762
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 764--764
+Overfull \hbox (24.85077pt too wide) in paragraph at lines 766--766
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 766--766
+Overfull \hbox (24.85077pt too wide) in paragraph at lines 770--770
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
@@ -1759,87 +1687,111 @@ Overfull \hbox (24.85077pt too wide) in paragraph at lines 774--774
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 776--776
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
 Overfull \hbox (24.85077pt too wide) in paragraph at lines 782--782
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду неработоспособности системы[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 790--790
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 790--790
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
 Overfull \hbox (50.34454pt too wide) in paragraph at lines 792--792
 []                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (24.85077pt too wide) in paragraph at lines 796--796
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду неработоспособности системы[] 
+ []
+
+
+Overfull \hbox (24.85077pt too wide) in paragraph at lines 798--798
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду неработоспособности системы[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 800--800
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+[16]
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 820--820
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 822--822
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 830--830
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 834--834
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 836--836
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 838--838
+[]                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду исправности всех устройств типа В[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 802--802
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 840--840
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 804--804
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 858--858
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-[15]
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 824--824
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 826--826
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 862--862
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 838--838
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 864--864
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 854--854
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 876--876
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 860--860
+[17]
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 878--878
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 862--862
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 866--866
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 876--876
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
@@ -1854,28 +1806,10 @@ Overfull \hbox (50.34454pt too wide) in paragraph at lines 886--886
 ---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
-[16]
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 888--888
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 906--906
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (50.34454pt too wide) in paragraph at lines 890--890
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду исправности всех устройств типа А[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 894--894
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 898--898
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа В[] 
  []
 
 
@@ -1885,9 +1819,9 @@ Overfull \hbox (50.34454pt too wide) in paragraph at lines 912--912
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 914--914
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 914--914
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
@@ -1897,31 +1831,13 @@ Overfull \hbox (50.34454pt too wide) in paragraph at lines 916--916
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 918--918
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
 Overfull \hbox (50.34454pt too wide) in paragraph at lines 920--920
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду исправности всех устройств типа А[] 
+---> пропуск события ввиду исправности всех устройств типа В[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 922--922
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
- []
-
-
-Overfull \hbox (50.34454pt too wide) in paragraph at lines 924--924
-[]                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду исправности всех устройств типа А[] 
- []
-
-
-Overfull \hbox (50.34454pt too wide) in paragraph at lines 926--926
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 928--928
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду исправности всех устройств типа А[] 
  []
@@ -1933,23 +1849,53 @@ Overfull \hbox (50.34454pt too wide) in paragraph at lines 930--930
  []
 
 
-Overfull \hbox (50.34454pt too wide) in paragraph at lines 932--932
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 938--938
 []                                                  \T2A/cmtt/m/n/8 -----------
 ---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
 
-Overfull \hbox (24.85077pt too wide) in paragraph at lines 946--946
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 942--942
 []                                                  \T2A/cmtt/m/n/8 -----------
----> пропуск события ввиду неработоспособности системы[] 
+---> пропуск события ввиду исправности всех устройств типа А[] 
  []
 
-[17]
-Overfull \hbox (0.80959pt too wide) in paragraph at lines 963--963
+[18]
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 946--946
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа В[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 948--948
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 950--950
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа В[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 952--952
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (50.34454pt too wide) in paragraph at lines 958--958
+[]                                                  \T2A/cmtt/m/n/8 -----------
+---> пропуск события ввиду исправности всех устройств типа А[] 
+ []
+
+
+Overfull \hbox (0.80959pt too wide) in paragraph at lines 977--977
  []
  []
 
-) [18] (./educmm_lab_Variant_N_M.aux
+) [19] (./educmm_lab_Variant_N_M.aux
 * soulpos - computing points - it may take a few seconds *
 \openout5 = `educmm_lab_Variant_N_M.upb'.
 
@@ -1960,10 +1906,10 @@ Package rerunfilecheck Info: File `educmm_lab_Variant_N_M.out' has not changed.
 (rerunfilecheck)             Checksum: C4B83DF47F51A5091BD3D38D19501FEB;2097.
  ) 
 Here is how much of TeX's memory you used:
- 37059 strings out of 478268
- 711992 string characters out of 5846347
- 1155202 words of memory out of 5000000
- 54401 multiletter control sequences out of 15000+600000
+ 37085 strings out of 478268
+ 712524 string characters out of 5846347
+ 1183227 words of memory out of 5000000
+ 54426 multiletter control sequences out of 15000+600000
  513990 words of font info for 154 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,16n,120p,1387b,1362s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1999,10 +1945,10 @@ e1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1
 ublic/cm-super/sfti1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/cm-super/sfti1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/publi
 c/cm-super/sftt0800.pfb>
-Output written on educmm_lab_Variant_N_M.pdf (18 pages, 1333908 bytes).
+Output written on educmm_lab_Variant_N_M.pdf (19 pages, 1387197 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 101 named destinations out of 1000 (max. 500000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 102 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

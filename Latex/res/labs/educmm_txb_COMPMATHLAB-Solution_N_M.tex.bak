@@ -46,16 +46,16 @@
 \newpage
 \subsection{Решение}
 
-Рассчитаем начальные данные для выполнения домашнего задания по номеру зачетки $N = 34$ и группы $G = 2$:
+Рассчитаем начальные данные для выполнения домашнего задания по номеру зачетки $N = 28$ и группы $G = 3$:
 \[
 \begin{matrix}
-    \lambda_A & = G + (N \bmod 3) = 2 + (34 \bmod 3) = & 3 \\
-    \lambda_B & = G + (N \bmod 5) = 2 + (34 \bmod 5) = & 6 \\
-    N_A & = 2 + (G \bmod 2) = 2 + (2 \bmod 2) = & 2 \\
-    N_B & = 2 + (N \bmod 2) = 2 + (34 \bmod 2) = & 2 \\
-    R_A & = 4 + (G \bmod 2) = 4 + (2 \bmod 2) = & 4 \\
-    R_B & = 5 - (G \bmod 2) = 5 - (2 \bmod 2) = & 5 \\
-    \lambda_S & = (N_A + N_B - (G \bmod 3)) * (G + (N \bmod 4)) = & 8
+    \lambda_A & = G + (N \bmod 3) = 3 + (28 \bmod 3) = & 4 \\
+    \lambda_B & = G + (N \bmod 5) = 3 + (28 \bmod 5) = & 6 \\
+    N_A & = 2 + (G \bmod 2) = 2 + (3 \bmod 2) = & 3 \\
+    N_B & = 2 + (N \bmod 2) = 2 + (28 \bmod 2) = & 2 \\
+    R_A & = 4 + (G \bmod 2) = 4 + (3 \bmod 2) = & 5 \\
+    R_B & = 5 - (G \bmod 2) = 5 - (3 \bmod 2) = & 4 \\
+    \lambda_S & = (N_A + N_B - (G \bmod 3)) * (G + (N \bmod 4)) = & 15
 \end{matrix}
 \]
 
@@ -77,471 +77,446 @@
                 
 \begin{tikzpicture}[>=latex,line join=bevel,]
   \pgfsetlinewidth{1bp}
-label=graph%
+%%
 \pgfsetcolor{black}
-  % Edge: s2223 -> s2222
+  % Edge: s3222 -> s3221
   \pgfsetcolor{blue}
-  \draw [->] (257.62bp,959.57bp) .. controls (251.39bp,953.69bp) and (244.7bp,946.5bp)  .. (239.85bp,939.0bp) .. controls (235.49bp,932.27bp) and (231.91bp,924.39bp)  .. (225.36bp,906.05bp);
+  \draw [->] (225.97bp,23.052bp) .. controls (220.87bp,24.831bp) and (215.59bp,26.859bp)  .. (200.48bp,33.447bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (241.85bp,931.5bp) node {$2\lambda_B$};
-  % Edge: s2223 -> s2123
+  \draw (216.24bp,33.52bp) node {$2\lambda_B$};
+  % Edge: s3222 -> s3122
   \pgfsetcolor{blue}
-  \draw [->] (275.25bp,956.6bp) .. controls (276.26bp,912.83bp) and (278.93bp,797.77bp)  .. (280.45bp,732.32bp);
+  \draw [->] (256.02bp,36.32bp) .. controls (257.62bp,45.691bp) and (260.58bp,57.281bp)  .. (267.55bp,78.006bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (279.85bp,844.5bp) node {$2\lambda_A$};
-  % Edge: s2222 -> s2223
+  \draw (257.98bp,59.513bp) node {$3\lambda_A$};
+  % Edge: s3221 -> s3222
   \pgfsetcolor{green}
-  \draw [->] (231.7bp,905.32bp) .. controls (235.57bp,911.19bp) and (239.93bp,917.87bp)  .. (243.85bp,924.0bp) .. controls (248.82bp,931.78bp) and (254.14bp,940.3bp)  .. (264.9bp,957.72bp);
+  \draw [->] (211.31bp,42.889bp) .. controls (216.41bp,41.111bp) and (221.69bp,39.082bp)  .. (236.8bp,32.495bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (254.85bp,931.5bp) node {$\lambda_S$};
-  % Edge: s2222 -> s2221
+  \draw (221.04bp,47.422bp) node {$\lambda_S$};
+  % Edge: s3221 -> s3220
   \pgfsetcolor{blue}
-  \draw [->] (195.6bp,876.71bp) .. controls (183.81bp,870.88bp) and (170.32bp,862.62bp)  .. (160.85bp,852.0bp) .. controls (155.18bp,845.65bp) and (150.79bp,837.61bp)  .. (143.46bp,819.25bp);
+  \draw [->] (148.89bp,50.86bp) .. controls (144.01bp,52.174bp) and (138.97bp,53.69bp)  .. (123.74bp,58.976bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (162.85bp,844.5bp) node {$2\lambda_B$};
-  % Edge: s2222 -> s2122
+  \draw (139.48bp,45.584bp) node {$2\lambda_B$};
+  % Edge: s3221 -> s3121
   \pgfsetcolor{blue}
-  \draw [->] (220.85bp,869.8bp) .. controls (220.85bp,858.58bp) and (220.85bp,843.67bp)  .. (220.85bp,819.47bp);
+  \draw [->] (184.53bp,65.966bp) .. controls (186.77bp,76.094bp) and (189.63bp,88.97bp)  .. (194.49bp,110.9bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (222.85bp,844.5bp) node {$2\lambda_A$};
-  % Edge: s2123 -> s2223
+  \draw (186.35bp,90.709bp) node {$3\lambda_A$};
+  % Edge: s3122 -> s3222
   \pgfsetcolor{green}
-  \draw [->] (288.44bp,731.75bp) .. controls (290.64bp,737.42bp) and (292.75bp,743.88bp)  .. (293.85bp,750.0bp) .. controls (295.03bp,756.56bp) and (293.91bp,758.33bp)  .. (293.85bp,765.0bp) .. controls (293.13bp,842.36bp) and (304.74bp,863.28bp)  .. (288.85bp,939.0bp) .. controls (288.32bp,941.5bp) and (287.63bp,944.05bp)  .. (282.9bp,957.28bp);
+  \draw [->] (279.3bp,77.003bp) .. controls (277.7bp,67.632bp) and (274.74bp,56.041bp)  .. (267.76bp,35.317bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (298.85bp,844.5bp) node {$\lambda_S$};
-  % Edge: s2123 -> s2122
+  \draw (273.34bp,68.81bp) node {$\lambda_S$};
+  % Edge: s3122 -> s3121
   \pgfsetcolor{blue}
-  \draw [->] (271.34bp,731.58bp) .. controls (265.47bp,741.5bp) and (257.6bp,754.22bp)  .. (249.85bp,765.0bp) .. controls (247.35bp,768.47bp) and (244.61bp,772.04bp)  .. (234.6bp,784.34bp);
+  \draw [->] (248.06bp,101.19bp) .. controls (241.15bp,103.77bp) and (233.84bp,106.81bp)  .. (217.47bp,114.59bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (261.85bp,757.5bp) node {$2\lambda_B$};
-  % Edge: s2123 -> s2023
+  \draw (235.54bp,113.07bp) node {$2\lambda_B$};
+  % Edge: s3122 -> s3022
   \pgfsetcolor{blue}
-  \draw [->] (280.85bp,695.8bp) .. controls (280.85bp,684.58bp) and (280.85bp,669.67bp)  .. (280.85bp,645.47bp);
+  \draw [->] (279.05bp,113.67bp) .. controls (281.25bp,122.86bp) and (284.93bp,134.15bp)  .. (293.19bp,154.3bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (282.85bp,670.5bp) node {$2\lambda_A$};
-  % Edge: s2221 -> s2222
+  \draw (281.99bp,136.48bp) node {$3\lambda_A$};
+  % Edge: s3220 -> s3221
   \pgfsetcolor{green}
-  \draw [->] (153.66bp,817.35bp) .. controls (166.1bp,830.25bp) and (184.08bp,848.89bp)  .. (206.19bp,871.8bp);
+  \draw [->] (133.61bp,69.339bp) .. controls (138.49bp,68.024bp) and (143.53bp,66.509bp)  .. (158.75bp,61.223bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (186.85bp,844.5bp) node {$\lambda_S$};
-  % Edge: s2221 -> s2220
+  \draw (139.01bp,74.615bp) node {$\lambda_S$};
+  % Edge: s3220 -> s3210
   \pgfsetcolor{blue}
-  \draw [->] (113.45bp,789.83bp) .. controls (102.2bp,784.11bp) and (89.76bp,775.9bp)  .. (81.847bp,765.0bp) .. controls (77.251bp,758.67bp) and (74.395bp,750.81bp)  .. (70.694bp,732.12bp);
+  \draw [->] (91.345bp,54.984bp) .. controls (86.243bp,49.541bp) and (79.894bp,43.537bp)  .. (65.337bp,31.306bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (83.847bp,757.5bp) node {$2\lambda_B$};
-  % Edge: s2221 -> s2121
+  \draw (80.4bp,38.991bp) node {$2\lambda_B$};
+  % Edge: s3220 -> s3120
   \pgfsetcolor{blue}
-  \draw [->] (140.57bp,782.83bp) .. controls (141.63bp,773.16bp) and (143.11bp,760.88bp)  .. (144.85bp,750.0bp) .. controls (145.2bp,747.8bp) and (145.59bp,745.52bp)  .. (148.16bp,732.04bp);
+  \draw [->] (105.01bp,90.587bp) .. controls (106.81bp,101.44bp) and (109.13bp,115.42bp)  .. (112.95bp,138.44bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (146.85bp,757.5bp) node {$2\lambda_A$};
-  % Edge: s2122 -> s2123
+  \draw (106.09bp,116.66bp) node {$3\lambda_A$};
+  % Edge: s3121 -> s3122
   \pgfsetcolor{green}
-  \draw [->] (229.9bp,783.34bp) .. controls (235.54bp,773.4bp) and (243.15bp,760.68bp)  .. (250.85bp,750.0bp) .. controls (253.51bp,746.31bp) and (256.47bp,742.53bp)  .. (266.82bp,730.22bp);
+  \draw [->] (229.05bp,123.28bp) .. controls (235.96bp,120.71bp) and (243.27bp,117.67bp)  .. (259.63bp,109.89bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (252.85bp,757.5bp) node {$\lambda_S$};
-  % Edge: s2122 -> s2121
+  \draw (241.57bp,126.4bp) node {$\lambda_S$};
+  % Edge: s3121 -> s3120
   \pgfsetcolor{blue}
-  \draw [->] (198.64bp,787.98bp) .. controls (189.36bp,782.06bp) and (179.08bp,774.21bp)  .. (171.85bp,765.0bp) .. controls (166.73bp,758.48bp) and (162.75bp,750.47bp)  .. (156.02bp,732.0bp);
+  \draw [->] (167.14bp,132.8bp) .. controls (160.82bp,134.62bp) and (154.17bp,136.78bp)  .. (137.58bp,143.02bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (173.85bp,757.5bp) node {$2\lambda_B$};
-  % Edge: s2122 -> s2022
+  \draw (155.49bp,128.44bp) node {$2\lambda_B$};
+  % Edge: s3121 -> s3021
   \pgfsetcolor{blue}
-  \draw [->] (217.95bp,782.8bp) .. controls (215.32bp,765.67bp) and (211.85bp,738.59bp)  .. (211.85bp,715.0bp) .. controls (211.85bp,715.0bp) and (211.85bp,715.0bp)  .. (211.85bp,452.0bp) .. controls (211.85bp,430.58bp) and (222.03bp,408.56bp)  .. (237.82bp,382.98bp);
+  \draw [->] (198.83bp,147.36bp) .. controls (201.09bp,157.39bp) and (205.06bp,170.02bp)  .. (213.54bp,191.31bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (213.85bp,583.5bp) node {$2\lambda_A$};
-  % Edge: s2023 -> s2123
+  \draw (202.1bp,171.78bp) node {$3\lambda_A$};
+  % Edge: s3022 -> s3122
   \pgfsetcolor{green}
-  \draw [->] (284.01bp,645.1bp) .. controls (285.43bp,654.75bp) and (286.63bp,667.04bp)  .. (285.85bp,678.0bp) .. controls (285.7bp,680.07bp) and (285.5bp,682.2bp)  .. (283.83bp,695.61bp);
+  \draw [->] (304.96bp,152.8bp) .. controls (302.76bp,143.61bp) and (299.08bp,132.32bp)  .. (290.82bp,112.17bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (287.85bp,670.5bp) node {$\lambda_S$};
-  % Edge: s2023 -> s2022
+  \draw (298.02bp,144.99bp) node {$\lambda_S$};
+  % Edge: s3022 -> s3021
   \pgfsetcolor{blue}
-  \draw [->] (272.94bp,609.25bp) .. controls (270.59bp,603.57bp) and (268.27bp,597.12bp)  .. (266.85bp,591.0bp) .. controls (250.88bp,522.22bp) and (248.99bp,438.68bp)  .. (249.39bp,384.41bp);
+  \draw [->] (280.59bp,182.7bp) .. controls (274.12bp,185.71bp) and (267.04bp,189.0bp)  .. (250.35bp,196.76bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (255.85bp,496.5bp) node {$2\lambda_B$};
-  % Edge: s2023 -> s1023
+  \draw (268.38bp,194.95bp) node {$2\lambda_B$};
+  % Edge: s3022 -> s2022
   \pgfsetcolor{blue}
-  \draw [->] (293.45bp,610.01bp) .. controls (303.28bp,597.55bp) and (317.1bp,580.01bp)  .. (335.3bp,556.92bp);
+  \draw [->] (307.65bp,189.33bp) .. controls (310.63bp,198.05bp) and (315.22bp,208.63bp)  .. (325.11bp,227.58bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (319.85bp,583.5bp) node {$2\lambda_A$};
-  % Edge: s2220 -> s2221
+  \draw (311.85bp,211.24bp) node {$3\lambda_A$};
+  % Edge: s3210 -> s3220
   \pgfsetcolor{green}
-  \draw [->] (82.656bp,730.78bp) .. controls (92.848bp,743.33bp) and (107.29bp,761.12bp)  .. (126.19bp,784.41bp);
+  \draw [->] (52.601bp,36.346bp) .. controls (57.703bp,41.789bp) and (64.052bp,47.793bp)  .. (78.609bp,60.024bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (110.85bp,757.5bp) node {$\lambda_S$};
-  % Edge: s2220 -> s2210
-  \pgfsetcolor{blue}
-  \draw [->] (54.37bp,697.82bp) .. controls (49.325bp,692.06bp) and (44.173bp,685.16bp)  .. (40.847bp,678.0bp) .. controls (37.762bp,671.36bp) and (35.731bp,663.77bp)  .. (32.779bp,645.32bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (42.847bp,670.5bp) node {$2\lambda_B$};
-  % Edge: s2220 -> s2120
-  \pgfsetcolor{blue}
-  \draw [->] (78.54bp,696.21bp) .. controls (84.627bp,684.45bp) and (92.89bp,668.48bp)  .. (105.17bp,644.76bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (96.847bp,670.5bp) node {$2\lambda_A$};
-  % Edge: s2121 -> s2122
+  \draw (59.546bp,52.339bp) node {$\lambda_S$};
+  % Edge: s3120 -> s3121
   \pgfsetcolor{green}
-  \draw [->] (164.66bp,730.78bp) .. controls (174.85bp,743.33bp) and (189.29bp,761.12bp)  .. (208.19bp,784.41bp);
+  \draw [->] (147.38bp,153.09bp) .. controls (153.7bp,151.27bp) and (160.35bp,149.1bp)  .. (176.95bp,142.87bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (192.85bp,757.5bp) node {$\lambda_S$};
-  % Edge: s2121 -> s2120
+  \draw (155.04bp,157.45bp) node {$\lambda_S$};
+  % Edge: s3120 -> s3110
   \pgfsetcolor{blue}
-  \draw [->] (138.83bp,697.39bp) .. controls (134.52bp,691.58bp) and (130.01bp,684.76bp)  .. (126.85bp,678.0bp) .. controls (123.69bp,671.26bp) and (121.22bp,663.63bp)  .. (116.7bp,645.2bp);
+  \draw [->] (86.179bp,149.8bp) .. controls (81.894bp,149.55bp) and (77.423bp,149.4bp)  .. (62.03bp,149.44bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (128.85bp,670.5bp) node {$2\lambda_B$};
-  % Edge: s2121 -> s2021
+  \draw (77.573bp,157.08bp) node {$2\lambda_B$};
+  % Edge: s3120 -> s3020
   \pgfsetcolor{blue}
-  \draw [->] (158.93bp,696.08bp) .. controls (165.36bp,679.16bp) and (173.85bp,652.24bp)  .. (173.85bp,628.0bp) .. controls (173.85bp,628.0bp) and (173.85bp,628.0bp)  .. (173.85bp,365.0bp) .. controls (173.85bp,342.08bp) and (187.39bp,319.76bp)  .. (207.61bp,295.1bp);
+  \draw [->] (121.97bp,174.86bp) .. controls (125.55bp,185.71bp) and (130.17bp,199.71bp)  .. (137.59bp,222.2bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (175.85bp,496.5bp) node {$2\lambda_A$};
-  % Edge: s2022 -> s2122
+  \draw (126.09bp,200.92bp) node {$3\lambda_A$};
+  % Edge: s3021 -> s3121
   \pgfsetcolor{green}
-  \draw [->] (255.53bp,384.0bp) .. controls (257.34bp,389.69bp) and (259.28bp,396.09bp)  .. (260.85bp,402.0bp) .. controls (282.87bp,485.09bp) and (258.71bp,516.66bp)  .. (301.85bp,591.0bp) .. controls (307.85bp,601.34bp) and (316.98bp,598.08bp)  .. (321.85bp,609.0bp) .. controls (344.09bp,658.94bp) and (347.53bp,683.74bp)  .. (321.85bp,732.0bp) .. controls (308.3bp,757.45bp) and (280.52bp,775.09bp)  .. (247.02bp,790.7bp);
+  \draw [->] (225.22bp,190.1bp) .. controls (222.96bp,180.07bp) and (218.99bp,167.44bp)  .. (210.51bp,146.15bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (303.85bp,583.5bp) node {$\lambda_S$};
+  \draw (217.95bp,180.69bp) node {$\lambda_S$};
+  % Edge: s3021 -> s3020
+  \pgfsetcolor{blue}
+  \draw [->] (194.96bp,213.31bp) .. controls (187.94bp,215.69bp) and (180.47bp,218.55bp)  .. (163.65bp,225.92bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (182.22bp,224.91bp) node {$2\lambda_B$};
+  % Edge: s3021 -> s2021
+  \pgfsetcolor{blue}
+  \draw [->] (227.99bp,226.49bp) .. controls (231.37bp,236.06bp) and (236.68bp,247.94bp)  .. (247.43bp,268.0bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (233.08bp,249.97bp) node {$3\lambda_A$};
+  % Edge: s2022 -> s3022
+  \pgfsetcolor{green}
+  \draw [->] (337.12bp,225.71bp) .. controls (334.13bp,216.99bp) and (329.55bp,206.41bp)  .. (319.66bp,187.46bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (328.92bp,203.8bp) node {$\lambda_S$};
   % Edge: s2022 -> s2021
   \pgfsetcolor{blue}
-  \draw [->] (238.29bp,348.97bp) .. controls (234.7bp,343.24bp) and (231.1bp,336.57bp)  .. (228.85bp,330.0bp) .. controls (226.52bp,323.22bp) and (225.07bp,315.65bp)  .. (223.13bp,297.06bp);
+  \draw [->] (315.66bp,256.27bp) .. controls (309.11bp,259.7bp) and (301.88bp,263.48bp)  .. (285.63bp,271.98bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (230.85bp,322.5bp) node {$2\lambda_B$};
+  \draw (303.28bp,269.2bp) node {$2\lambda_B$};
   % Edge: s2022 -> s1022
   \pgfsetcolor{blue}
-  \draw [->] (274.85bp,377.63bp) .. controls (287.15bp,383.63bp) and (301.69bp,391.95bp)  .. (312.85bp,402.0bp) .. controls (320.46bp,408.86bp) and (327.31bp,417.67bp)  .. (339.04bp,435.7bp);
+  \draw [->] (344.06bp,262.08bp) .. controls (348.02bp,270.06bp) and (353.63bp,279.51bp)  .. (365.6bp,296.84bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (327.85bp,409.5bp) node {$2\lambda_A$};
-  % Edge: s1023 -> s2023
+  \draw (349.72bp,282.56bp) node {$2\lambda_A$};
+  % Edge: s3110 -> s3120
   \pgfsetcolor{green}
-  \draw [->] (342.36bp,557.84bp) .. controls (338.5bp,568.09bp) and (332.63bp,581.07bp)  .. (324.85bp,591.0bp) .. controls (320.6bp,596.41bp) and (315.36bp,601.5bp)  .. (300.99bp,613.08bp);
+  \draw [->] (61.653bp,162.43bp) .. controls (65.938bp,162.68bp) and (70.41bp,162.83bp)  .. (85.802bp,162.79bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (334.85bp,583.5bp) node {$\lambda_S$};
-  % Edge: s1023 -> s1022
-  \pgfsetcolor{blue}
-  \draw [->] (347.85bp,521.8bp) .. controls (347.85bp,510.58bp) and (347.85bp,495.67bp)  .. (347.85bp,471.47bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (349.85bp,496.5bp) node {$2\lambda_B$};
-  % Edge: s1023 -> s0023
-  \pgfsetcolor{blue}
-  \draw [->] (362.51bp,523.8bp) .. controls (374.91bp,510.95bp) and (392.88bp,492.32bp)  .. (415.04bp,469.35bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (394.85bp,496.5bp) node {$1\lambda_A$};
-  % Edge: s2210 -> s2220
+  \draw (66.26bp,170.16bp) node {$\lambda_S$};
+  % Edge: s3020 -> s3021
   \pgfsetcolor{green}
-  \draw [->] (39.339bp,644.76bp) .. controls (44.592bp,656.51bp) and (51.728bp,672.47bp)  .. (62.34bp,696.21bp);
+  \draw [->] (174.11bp,235.3bp) .. controls (181.14bp,232.91bp) and (188.6bp,230.06bp)  .. (205.42bp,222.68bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (55.847bp,670.5bp) node {$\lambda_S$};
-  % Edge: s2120 -> s2121
-  \pgfsetcolor{green}
-  \draw [->] (121.34bp,644.76bp) .. controls (126.59bp,656.51bp) and (133.73bp,672.47bp)  .. (144.34bp,696.21bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (137.85bp,670.5bp) node {$\lambda_S$};
-  % Edge: s2120 -> s2110
+  \draw (186.85bp,238.69bp) node {$\lambda_S$};
+  % Edge: s3020 -> s3010
   \pgfsetcolor{blue}
-  \draw [->] (98.37bp,610.82bp) .. controls (93.325bp,605.06bp) and (88.173bp,598.16bp)  .. (84.847bp,591.0bp) .. controls (81.762bp,584.36bp) and (79.731bp,576.77bp)  .. (76.779bp,558.32bp);
+  \draw [->] (112.1bp,243.72bp) .. controls (106.58bp,245.28bp) and (100.82bp,247.11bp)  .. (85.02bp,252.9bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (86.847bp,583.5bp) node {$2\lambda_B$};
-  % Edge: s2120 -> s2020
+  \draw (101.69bp,238.89bp) node {$2\lambda_B$};
+  % Edge: s3020 -> s2020
   \pgfsetcolor{blue}
-  \draw [->] (120.93bp,609.08bp) .. controls (127.36bp,592.16bp) and (135.85bp,565.24bp)  .. (135.85bp,541.0bp) .. controls (135.85bp,541.0bp) and (135.85bp,541.0bp)  .. (135.85bp,278.0bp) .. controls (135.85bp,255.31bp) and (148.84bp,232.98bp)  .. (168.23bp,208.21bp);
+  \draw [->] (146.08bp,258.42bp) .. controls (149.82bp,269.09bp) and (155.93bp,282.71bp)  .. (167.28bp,303.76bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (137.85bp,409.5bp) node {$2\lambda_A$};
-  % Edge: s2021 -> s2022
+  \draw (152.1bp,283.94bp) node {$3\lambda_A$};
+  % Edge: s2021 -> s3021
   \pgfsetcolor{green}
-  \draw [->] (228.3bp,297.18bp) .. controls (231.92bp,308.58bp) and (236.76bp,323.8bp)  .. (244.38bp,347.8bp);
+  \draw [->] (259.36bp,266.24bp) .. controls (255.99bp,256.67bp) and (250.68bp,244.8bp)  .. (239.93bp,224.74bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (240.85bp,322.5bp) node {$\lambda_S$};
+  \draw (250.28bp,257.76bp) node {$\lambda_S$};
   % Edge: s2021 -> s2020
   \pgfsetcolor{blue}
-  \draw [->] (204.78bp,263.71bp) .. controls (198.72bp,257.94bp) and (192.57bp,250.8bp)  .. (188.85bp,243.0bp) .. controls (185.72bp,236.45bp) and (183.99bp,228.89bp)  .. (182.23bp,210.42bp);
+  \draw [->] (236.42bp,295.7bp) .. controls (230.06bp,298.53bp) and (223.12bp,301.61bp)  .. (206.75bp,308.87bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (190.85bp,235.5bp) node {$2\lambda_B$};
+  \draw (224.4bp,307.65bp) node {$2\lambda_B$};
   % Edge: s2021 -> s1021
   \pgfsetcolor{blue}
-  \draw [->] (229.26bp,261.06bp) .. controls (233.15bp,251.25bp) and (238.4bp,238.75bp)  .. (243.85bp,228.0bp) .. controls (245.32bp,225.1bp) and (246.94bp,222.11bp)  .. (254.31bp,209.46bp);
+  \draw [->] (266.78bp,302.7bp) .. controls (271.24bp,311.61bp) and (277.73bp,322.43bp)  .. (290.51bp,340.74bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (245.85bp,235.5bp) node {$2\lambda_A$};
+  \draw (273.53bp,324.86bp) node {$2\lambda_A$};
   % Edge: s1022 -> s2022
   \pgfsetcolor{green}
-  \draw [->] (331.22bp,437.58bp) .. controls (315.88bp,424.27bp) and (292.86bp,404.31bp)  .. (266.55bp,381.49bp);
+  \draw [->] (377.7bp,293.9bp) .. controls (373.73bp,285.92bp) and (368.12bp,276.47bp)  .. (356.15bp,259.14bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (305.85bp,409.5bp) node {$\lambda_S$};
+  \draw (368.04bp,273.41bp) node {$\lambda_S$};
   % Edge: s1022 -> s1021
   \pgfsetcolor{blue}
-  \draw [->] (343.25bp,434.82bp) .. controls (340.6bp,425.15bp) and (337.16bp,412.86bp)  .. (333.85bp,402.0bp) .. controls (313.92bp,336.63bp) and (288.16bp,260.59bp)  .. (270.75bp,209.98bp);
+  \draw [->] (360.36bp,325.12bp) .. controls (353.78bp,329.01bp) and (346.42bp,333.35bp)  .. (329.96bp,343.08bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (311.85bp,322.5bp) node {$2\lambda_B$};
+  \draw (347.85bp,338.83bp) node {$2\lambda_B$};
   % Edge: s1022 -> s0022
   \pgfsetcolor{blue}
-  \draw [->] (360.26bp,436.01bp) .. controls (369.94bp,423.55bp) and (383.55bp,406.01bp)  .. (401.49bp,382.92bp);
+  \draw [->] (409.85bp,321.54bp) .. controls (413.27bp,322.07bp) and (416.83bp,322.54bp)  .. (431.12bp,323.94bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (385.85bp,409.5bp) node {$1\lambda_A$};
-  % Edge: s0023 -> s1023
+  \draw (417.13bp,329.74bp) node {$1\lambda_A$};
+  % Edge: s3010 -> s3020
   \pgfsetcolor{green}
-  \draw [->] (422.65bp,470.58bp) .. controls (417.59bp,480.98bp) and (410.08bp,494.22bp)  .. (400.85bp,504.0bp) .. controls (394.92bp,510.29bp) and (387.65bp,516.0bp)  .. (370.71bp,527.08bp);
+  \draw [->] (94.76bp,263.13bp) .. controls (100.28bp,261.56bp) and (106.04bp,259.73bp)  .. (121.84bp,253.94bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (412.85bp,496.5bp) node {$\lambda_S$};
-  % Edge: s2110 -> s2120
+  \draw (101.17bp,267.96bp) node {$\lambda_S$};
+  % Edge: s2020 -> s3020
   \pgfsetcolor{green}
-  \draw [->] (83.339bp,557.76bp) .. controls (88.592bp,569.51bp) and (95.728bp,585.47bp)  .. (106.34bp,609.21bp);
+  \draw [->] (178.97bp,301.95bp) .. controls (175.23bp,291.29bp) and (169.12bp,277.66bp)  .. (157.77bp,256.61bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (99.847bp,583.5bp) node {$\lambda_S$};
-  % Edge: s2020 -> s2021
-  \pgfsetcolor{green}
-  \draw [->] (190.73bp,209.76bp) .. controls (196.26bp,221.51bp) and (203.77bp,237.47bp)  .. (214.94bp,261.21bp);
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (207.85bp,235.5bp) node {$\lambda_S$};
+  \draw (168.95bp,291.44bp) node {$\lambda_S$};
   % Edge: s2020 -> s2010
   \pgfsetcolor{blue}
-  \draw [->] (171.29bp,174.97bp) .. controls (167.7bp,169.24bp) and (164.1bp,162.57bp)  .. (161.85bp,156.0bp) .. controls (159.52bp,149.22bp) and (158.07bp,141.65bp)  .. (156.13bp,123.06bp);
+  \draw [->] (155.04bp,330.11bp) .. controls (148.12bp,334.23bp) and (140.73bp,339.11bp)  .. (125.44bp,350.5bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (163.85bp,148.5bp) node {$2\lambda_B$};
+  \draw (142.54bp,329.54bp) node {$2\lambda_B$};
   % Edge: s2020 -> s1020
   \pgfsetcolor{blue}
-  \draw [->] (193.45bp,174.61bp) .. controls (201.29bp,162.5bp) and (212.11bp,145.77bp)  .. (227.28bp,122.34bp);
+  \draw [->] (186.22bp,337.98bp) .. controls (190.86bp,347.42bp) and (197.81bp,359.09bp)  .. (211.1bp,378.27bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (215.85bp,148.5bp) node {$2\lambda_A$};
+  \draw (193.49bp,361.17bp) node {$2\lambda_A$};
   % Edge: s1021 -> s2021
   \pgfsetcolor{green}
-  \draw [->] (257.94bp,209.87bp) .. controls (253.81bp,219.66bp) and (248.31bp,232.16bp)  .. (242.85bp,243.0bp) .. controls (241.45bp,245.78bp) and (239.93bp,248.64bp)  .. (232.77bp,261.46bp);
+  \draw [->] (302.6bp,338.05bp) .. controls (298.14bp,329.13bp) and (291.65bp,318.32bp)  .. (278.87bp,300.01bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (252.85bp,235.5bp) node {$\lambda_S$};
+  \draw (291.85bp,330.89bp) node {$\lambda_S$};
   % Edge: s1021 -> s1020
   \pgfsetcolor{blue}
-  \draw [->] (253.29bp,174.97bp) .. controls (249.7bp,169.24bp) and (246.1bp,162.57bp)  .. (243.85bp,156.0bp) .. controls (241.52bp,149.22bp) and (240.07bp,141.65bp)  .. (238.13bp,123.06bp);
+  \draw [->] (282.82bp,368.03bp) .. controls (276.39bp,371.07bp) and (269.34bp,374.41bp)  .. (252.74bp,382.27bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (245.85bp,148.5bp) node {$2\lambda_B$};
+  \draw (270.66bp,380.33bp) node {$2\lambda_B$};
   % Edge: s1021 -> s0021
   \pgfsetcolor{blue}
-  \draw [->] (275.45bp,174.61bp) .. controls (283.29bp,162.5bp) and (294.11bp,145.77bp)  .. (309.28bp,122.34bp);
+  \draw [->] (314.66bp,374.32bp) .. controls (319.38bp,381.5bp) and (325.7bp,389.81bp)  .. (339.01bp,405.16bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (296.85bp,148.5bp) node {$1\lambda_A$};
+  \draw (321.38bp,393.34bp) node {$1\lambda_A$};
   % Edge: s0022 -> s1022
   \pgfsetcolor{green}
-  \draw [->] (408.74bp,383.85bp) .. controls (405.1bp,394.1bp) and (399.49bp,407.09bp)  .. (391.85bp,417.0bp) .. controls (387.65bp,422.45bp) and (382.43bp,427.55bp)  .. (368.06bp,439.13bp);
+  \draw [->] (435.38bp,311.26bp) .. controls (431.96bp,310.73bp) and (428.4bp,310.25bp)  .. (414.1bp,308.86bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (401.85bp,409.5bp) node {$\lambda_S$};
+  \draw (428.1bp,318.05bp) node {$\lambda_S$};
   % Edge: s2010 -> s2020
   \pgfsetcolor{green}
-  \draw [->] (161.3bp,123.18bp) .. controls (164.92bp,134.58bp) and (169.76bp,149.8bp)  .. (177.38bp,173.8bp);
+  \draw [->] (138.0bp,356.88bp) .. controls (144.92bp,352.76bp) and (152.31bp,347.88bp)  .. (167.59bp,336.49bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (173.85bp,148.5bp) node {$\lambda_S$};
-  % Edge: s1020 -> s1021
+  \draw (146.5bp,357.45bp) node {$\lambda_S$};
+  % Edge: s1020 -> s2020
   \pgfsetcolor{green}
-  \draw [->] (243.3bp,123.18bp) .. controls (246.92bp,134.58bp) and (251.76bp,149.8bp)  .. (259.38bp,173.8bp);
+  \draw [->] (223.32bp,376.05bp) .. controls (218.68bp,366.62bp) and (211.73bp,354.94bp)  .. (198.44bp,335.77bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (255.85bp,148.5bp) node {$\lambda_S$};
+  \draw (212.04bp,367.87bp) node {$\lambda_S$};
   % Edge: s1020 -> s1010
   \pgfsetcolor{blue}
-  \draw [->] (219.61bp,90.137bp) .. controls (213.26bp,84.321bp) and (206.75bp,77.038bp)  .. (202.85bp,69.0bp) .. controls (199.68bp,62.473bp) and (197.93bp,54.923bp)  .. (196.18bp,36.451bp);
+  \draw [->] (209.27bp,408.76bp) .. controls (202.62bp,416.35bp) and (195.37bp,425.78bp)  .. (183.45bp,443.77bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (204.85bp,61.5bp) node {$2\lambda_B$};
+  \draw (197.32bp,429.17bp) node {$2\lambda_B$};
   % Edge: s1020 -> s0020
   \pgfsetcolor{blue}
-  \draw [->] (243.37bp,86.98bp) .. controls (246.8bp,77.139bp) and (251.55bp,64.639bp)  .. (256.85bp,54.0bp) .. controls (258.4bp,50.888bp) and (260.15bp,47.701bp)  .. (267.86bp,34.994bp);
+  \draw [->] (226.18bp,412.05bp) .. controls (227.23bp,421.94bp) and (229.6bp,434.39bp)  .. (235.47bp,456.05bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (258.85bp,61.5bp) node {$1\lambda_A$};
+  \draw (227.33bp,436.28bp) node {$1\lambda_A$};
   % Edge: s0021 -> s1021
   \pgfsetcolor{green}
-  \draw [->] (313.61bp,122.89bp) .. controls (309.54bp,132.92bp) and (303.72bp,145.65bp)  .. (296.85bp,156.0bp) .. controls (294.18bp,160.01bp) and (291.07bp,164.02bp)  .. (280.29bp,176.18bp);
+  \draw [->] (351.58bp,401.69bp) .. controls (346.87bp,394.51bp) and (340.55bp,386.2bp)  .. (327.23bp,370.85bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (306.85bp,148.5bp) node {$\lambda_S$};
+  \draw (340.86bp,382.67bp) node {$\lambda_S$};
   % Edge: s1010 -> s1020
   \pgfsetcolor{green}
-  \draw [->] (204.93bp,35.758bp) .. controls (210.6bp,47.508bp) and (218.3bp,63.47bp)  .. (229.75bp,87.207bp);
+  \draw [->] (195.91bp,446.74bp) .. controls (202.55bp,439.15bp) and (209.81bp,429.72bp)  .. (221.72bp,411.73bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (221.85bp,61.5bp) node {$\lambda_S$};
+  \draw (203.85bp,426.33bp) node {$\lambda_S$};
   % Edge: s0020 -> s1020
   \pgfsetcolor{green}
-  \draw [->] (271.36bp,35.753bp) .. controls (266.95bp,45.504bp) and (261.2bp,58.004bp)  .. (255.85bp,69.0bp) .. controls (254.56bp,71.634bp) and (253.21bp,74.367bp)  .. (246.6bp,87.34bp);
+  \draw [->] (247.1bp,455.55bp) .. controls (246.05bp,445.67bp) and (243.67bp,433.21bp)  .. (237.81bp,411.56bp);
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (264.85bp,61.5bp) node {$\lambda_S$};
-  % Node: s2223
+  \draw (241.95bp,446.32bp) node {$\lambda_S$};
+  % Node: s3222
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{0.0,1.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (274.85bp,975.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (274.85bp,975.0bp) node {$S^{22}_{23}$};
+  \filldraw [opacity=1] (256.75bp,18.0bp) ellipse (31.7bp and 18.0bp);
+  \draw (256.75bp,18.0bp) node {$S^{32}_{22}$};
 \end{scope}
-  % Node: s2222
+  % Node: s3221
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (220.85bp,888.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (220.85bp,888.0bp) node {$S^{22}_{22}$};
+  \draw (180.53bp,47.94bp) ellipse (31.7bp and 18.0bp);
+  \draw (180.53bp,47.942bp) node {$S^{32}_{21}$};
 \end{scope}
-  % Node: s2123
+  % Node: s3122
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (280.85bp,714.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (280.85bp,714.0bp) node {$S^{21}_{23}$};
+  \draw (278.57bp,95.32bp) ellipse (31.7bp and 18.0bp);
+  \draw (278.57bp,95.323bp) node {$S^{31}_{22}$};
 \end{scope}
-  % Node: s2221
+  % Node: s3220
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (138.85bp,801.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (138.85bp,801.0bp) node {$S^{22}_{21}$};
+  \draw (101.97bp,72.26bp) ellipse (31.7bp and 18.0bp);
+  \draw (101.97bp,72.257bp) node {$S^{32}_{20}$};
 \end{scope}
-  % Node: s2122
+  % Node: s3121
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (220.85bp,801.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (220.85bp,801.0bp) node {$S^{21}_{22}$};
+  \draw (198.54bp,129.16bp) ellipse (31.7bp and 18.0bp);
+  \draw (198.54bp,129.16bp) node {$S^{31}_{21}$};
 \end{scope}
-  % Node: s2023
+  % Node: s3022
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (280.85bp,627.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (280.85bp,627.0bp) node {$S^{20}_{23}$};
+  \draw (305.44bp,171.15bp) ellipse (31.7bp and 18.0bp);
+  \draw (305.44bp,171.15bp) node {$S^{30}_{22}$};
 \end{scope}
-  % Node: s2220
+  % Node: s3210
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (69.85bp,714.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (69.847bp,714.0bp) node {$S^{22}_{20}$};
+  \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
+  \pgfsetfillcolor{fillcol}
+  \filldraw [opacity=1] (41.98bp,19.07bp) ellipse (31.7bp and 18.0bp);
+  \draw (41.98bp,19.073bp) node {$S^{32}_{10}$};
 \end{scope}
-  % Node: s2121
+  % Node: s3120
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (151.85bp,714.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (151.85bp,714.0bp) node {$S^{21}_{21}$};
+  \draw (115.99bp,156.73bp) ellipse (31.7bp and 18.0bp);
+  \draw (115.99bp,156.73bp) node {$S^{31}_{20}$};
+\end{scope}
+  % Node: s3021
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (225.51bp,208.31bp) ellipse (31.7bp and 18.0bp);
+  \draw (225.51bp,208.31bp) node {$S^{30}_{21}$};
 \end{scope}
   % Node: s2022
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (249.85bp,366.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (249.85bp,366.0bp) node {$S^{20}_{22}$};
+  \draw (339.33bp,243.89bp) ellipse (31.7bp and 18.0bp);
+  \draw (339.33bp,243.89bp) node {$S^{20}_{22}$};
 \end{scope}
-  % Node: s1023
-\begin{scope}
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \draw (347.85bp,540.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (347.85bp,540.0bp) node {$S^{10}_{23}$};
-\end{scope}
-  % Node: s2210
+  % Node: s3110
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (31.85bp,627.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (31.847bp,627.0bp) node {$S^{22}_{10}$};
+  \filldraw [opacity=1] (31.85bp,155.5bp) ellipse (31.7bp and 18.0bp);
+  \draw (31.847bp,155.5bp) node {$S^{31}_{10}$};
 \end{scope}
-  % Node: s2120
+  % Node: s3020
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (113.85bp,627.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (113.85bp,627.0bp) node {$S^{21}_{20}$};
+  \draw (143.56bp,240.3bp) ellipse (31.7bp and 18.0bp);
+  \draw (143.56bp,240.3bp) node {$S^{30}_{20}$};
 \end{scope}
   % Node: s2021
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (222.85bp,279.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (222.85bp,279.0bp) node {$S^{20}_{21}$};
+  \draw (261.84bp,284.43bp) ellipse (31.7bp and 18.0bp);
+  \draw (261.84bp,284.43bp) node {$S^{20}_{21}$};
 \end{scope}
   % Node: s1022
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (347.85bp,453.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (347.85bp,453.0bp) node {$S^{10}_{22}$};
+  \draw (382.43bp,312.09bp) ellipse (31.7bp and 18.0bp);
+  \draw (382.43bp,312.09bp) node {$S^{10}_{22}$};
 \end{scope}
-  % Node: s0023
+  % Node: s3010
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (429.85bp,453.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (429.85bp,453.0bp) node {$S^{00}_{23}$};
-\end{scope}
-  % Node: s2110
-\begin{scope}
-  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
-  \pgfsetstrokecolor{strokecol}
-  \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
-  \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (75.85bp,540.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (75.847bp,540.0bp) node {$S^{21}_{10}$};
+  \filldraw [opacity=1] (63.3bp,266.55bp) ellipse (31.7bp and 18.0bp);
+  \draw (63.299bp,266.55bp) node {$S^{30}_{10}$};
 \end{scope}
   % Node: s2020
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (182.85bp,192.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (182.85bp,192.0bp) node {$S^{20}_{20}$};
+  \draw (181.49bp,320.07bp) ellipse (31.7bp and 18.0bp);
+  \draw (181.49bp,320.07bp) node {$S^{20}_{20}$};
 \end{scope}
   % Node: s1021
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (264.85bp,192.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (264.85bp,192.0bp) node {$S^{10}_{21}$};
+  \draw (307.54bp,356.32bp) ellipse (31.7bp and 18.0bp);
+  \draw (307.54bp,356.32bp) node {$S^{10}_{21}$};
 \end{scope}
   % Node: s0022
 \begin{scope}
@@ -549,8 +524,8 @@ label=graph%
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (413.85bp,366.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (413.85bp,366.0bp) node {$S^{00}_{22}$};
+  \filldraw [opacity=1] (462.8bp,320.71bp) ellipse (31.7bp and 18.0bp);
+  \draw (462.8bp,320.71bp) node {$S^{00}_{22}$};
 \end{scope}
   % Node: s2010
 \begin{scope}
@@ -558,15 +533,15 @@ label=graph%
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (155.85bp,105.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (155.85bp,105.0bp) node {$S^{20}_{10}$};
+  \filldraw [opacity=1] (111.54bp,366.91bp) ellipse (31.7bp and 18.0bp);
+  \draw (111.54bp,366.91bp) node {$S^{20}_{10}$};
 \end{scope}
   % Node: s1020
 \begin{scope}
   \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
   \pgfsetstrokecolor{strokecol}
-  \draw (237.85bp,105.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (237.85bp,105.0bp) node {$S^{10}_{20}$};
+  \draw (228.04bp,393.96bp) ellipse (31.7bp and 18.0bp);
+  \draw (228.04bp,393.96bp) node {$S^{10}_{20}$};
 \end{scope}
   % Node: s0021
 \begin{scope}
@@ -574,8 +549,8 @@ label=graph%
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (319.85bp,105.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (319.85bp,105.0bp) node {$S^{00}_{21}$};
+  \filldraw [opacity=1] (358.71bp,419.69bp) ellipse (31.7bp and 18.0bp);
+  \draw (358.71bp,419.69bp) node {$S^{00}_{21}$};
 \end{scope}
   % Node: s1010
 \begin{scope}
@@ -583,8 +558,8 @@ label=graph%
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (196.85bp,18.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (196.85bp,18.0bp) node {$S^{10}_{10}$};
+  \filldraw [opacity=1] (177.13bp,461.54bp) ellipse (31.7bp and 18.0bp);
+  \draw (177.13bp,461.54bp) node {$S^{10}_{10}$};
 \end{scope}
   % Node: s0020
 \begin{scope}
@@ -592,49 +567,50 @@ label=graph%
   \pgfsetstrokecolor{strokecol}
   \definecolor{fillcol}{rgb}{1.0,0.0,0.0};
   \pgfsetfillcolor{fillcol}
-  \filldraw [opacity=1] (278.85bp,18.0bp) ellipse (31.7bp and 18.0bp);
-  \draw (278.85bp,18.0bp) node {$S^{00}_{20}$};
+  \filldraw [opacity=1] (245.23bp,473.64bp) ellipse (31.7bp and 18.0bp);
+  \draw (245.23bp,473.64bp) node {$S^{00}_{20}$};
 \end{scope}
 %
 \end{tikzpicture}
 
         }
+%        \includegraphics[height=0.8\textheight]{Images/graph.pdf}
     }
 
-    \caption{Граф состояний системы ($\lambda_A = 3$, $\lambda_B = 6$)}
+    \caption{Граф состояний системы ($\lambda_A = 4$, $\lambda_B = 6$)}
     \label{graph}
 \end{figure}
 
+\newpage
 По данному графу была получена матрица интенсивности:
 
 \[
     \resizebox{\textwidth}{!}{$
         \Lambda =
         \begin{pmatrix}
-        -18 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-8 & -26 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-8 & 0 & -26 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 8 & 0 & -26 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 8 & 0 & -26 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 8 & 0 & 0 & -26 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 8 & 0 & 0 & -26 & 0 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 8 & 0 & 0 & -26 & 0 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -26 & 0 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -23 & 0 & 0 & 0 & 12 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -26 & 0 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -26 & 0 & 0 & 0 & 12 & 6 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 0 & -23 & 0 & 0 & 0 & 12 & 3 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 0 & -8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -26 & 0 & 0 & 12 & 6 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 0 & -23 & 0 & 0 & 12 & 3 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 0 & -8 & 0 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & -8 & 0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & -23 & 0 & 12 & 3 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & -8 & 0 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & -8 & 0 \\
-0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & -8 
+        -24 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+15 & -39 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+15 & 0 & -39 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 15 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 15 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 15 & 0 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 15 & 0 & 0 & -15 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 15 & 0 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -35 & 0 & 0 & 12 & 8 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & -15 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & -39 & 0 & 0 & 12 & 12 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -35 & 0 & 0 & 12 & 8 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -31 & 0 & 0 & 12 & 4 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & -15 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -35 & 0 & 0 & 12 & 8 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -31 & 0 & 0 & 12 & 4 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -15 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & -15 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -31 & 0 & 12 & 4 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & 0 & -15 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & -15 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 15 & 0 & 0 & -15 
         \end{pmatrix}
     $}
 \]
@@ -644,70 +620,68 @@ label=graph%
 
 \[
 \begin{cases}
-    0 = 8P_{1} (t) +8P_{2} (t) -12P_{0} (t) -6P_{0} (t) \\ 
-0 = 12P_{0} (t) +8P_{3} (t) -8P_{1} (t) -12P_{1} (t) -6P_{1} (t) \\ 
-0 = 6P_{0} (t) +8P_{4} (t) +8P_{5} (t) -8P_{2} (t) -12P_{2} (t) -6P_{2} (t) \\ 
-0 = 12P_{1} (t) +8P_{6} (t) -8P_{3} (t) -12P_{3} (t) -6P_{3} (t) \\ 
-0 = 6P_{1} (t) +12P_{2} (t) +8P_{7} (t) +8P_{8} (t) -8P_{4} (t) -12P_{4} (t) -6P_{4} (t) \\ 
-0 = 6P_{2} (t) +8P_{9} (t) -8P_{5} (t) -12P_{5} (t) -6P_{5} (t) \\ 
-0 = 12P_{3} (t) +8P_{10} (t) -8P_{6} (t) -12P_{6} (t) -6P_{6} (t) \\ 
-0 = 6P_{3} (t) +12P_{4} (t) +8P_{11} (t) -8P_{7} (t) -12P_{7} (t) -6P_{7} (t) \\ 
-0 = 6P_{4} (t) +12P_{5} (t) +8P_{12} (t) +8P_{13} (t) -8P_{8} (t) -12P_{8} (t) -6P_{8} (t) \\ 
-0 = 6P_{5} (t) +8P_{14} (t) -8P_{9} (t) -12P_{9} (t) -3P_{9} (t) \\ 
-0 = 12P_{6} (t) -8P_{10} (t) \\ 
-0 = 6P_{6} (t) +12P_{7} (t) +8P_{15} (t) -8P_{11} (t) -12P_{11} (t) -6P_{11} (t) \\ 
-0 = 6P_{7} (t) +12P_{8} (t) +8P_{16} (t) +8P_{17} (t) -8P_{12} (t) -12P_{12} (t) -6P_{12} (t) \\ 
-0 = 6P_{8} (t) +12P_{9} (t) +8P_{18} (t) -8P_{13} (t) -12P_{13} (t) -3P_{13} (t) \\ 
-0 = 3P_{9} (t) -8P_{14} (t) \\ 
-0 = 12P_{11} (t) -8P_{15} (t) \\ 
-0 = 6P_{11} (t) +12P_{12} (t) +8P_{19} (t) -8P_{16} (t) -12P_{16} (t) -6P_{16} (t) \\ 
-0 = 6P_{12} (t) +12P_{13} (t) +8P_{20} (t) +8P_{21} (t) -8P_{17} (t) -12P_{17} (t) -3P_{17} (t) \\ 
-0 = 3P_{13} (t) -8P_{18} (t) \\ 
-0 = 12P_{16} (t) -8P_{19} (t) \\ 
-0 = 6P_{16} (t) +12P_{17} (t) +8P_{22} (t) +8P_{23} (t) -8P_{20} (t) -12P_{20} (t) -3P_{20} (t) \\ 
-0 = 3P_{17} (t) -8P_{21} (t) \\ 
-0 = 12P_{20} (t) -8P_{22} (t) \\ 
-0 = 3P_{20} (t) -8P_{23} (t) 
+    0 =-24p_{0} +15p_{1} +15p_{2} \\ 
+0 = 12p_{0} -39p_{1} +15p_{3} \\ 
+0 = 12p_{0} -39p_{2} +15p_{4} +15p_{5} \\ 
+0 = 12p_{1} -39p_{3} +15p_{6} \\ 
+0 = 12p_{1} +12p_{2} -39p_{4} +15p_{7} +15p_{8} \\ 
+0 = 12p_{2} -39p_{5} +15p_{9} \\ 
+0 = 12p_{3} -15p_{6} \\ 
+0 = 12p_{3} +12p_{4} -39p_{7} +15p_{10} \\ 
+0 = 12p_{4} +12p_{5} -39p_{8} +15p_{11} +15p_{12} \\ 
+0 = 12p_{5} -35p_{9} +15p_{13} \\ 
+0 = 12p_{7} -15p_{10} \\ 
+0 = 12p_{7} +12p_{8} -39p_{11} +15p_{14} +15p_{15} \\ 
+0 = 12p_{8} +12p_{9} -35p_{12} +15p_{16} \\ 
+0 = 8p_{9} -31p_{13} +15p_{17} \\ 
+0 = 12p_{11} -15p_{14} \\ 
+0 = 12p_{11} +12p_{12} -35p_{15} +15p_{18} +15p_{19} \\ 
+0 = 8p_{12} +12p_{13} -31p_{16} +15p_{20} \\ 
+0 = 4p_{13} -15p_{17} \\ 
+0 = 12p_{15} -15p_{18} \\ 
+0 = 8p_{15} +12p_{16} -31p_{19} +15p_{21} +15p_{22} \\ 
+0 = 4p_{16} -15p_{20} \\ 
+0 = 12p_{19} -15p_{21} \\ 
+0 = 4p_{19} -15p_{22} 
 \end{cases}
 \]
 
-Условие нормировки: $\sum\limits_{i=0}^{ 23 }p_i=1$.
+Условие нормировки: $\sum\limits_{i=0}^{ 22 }p_i=1$.
 Тогда вектор предельных вероятностей может быть найдет после решения СЛАУ вида $$\mathbf{\Lambda}^T\bar{p}=\bar{b}.$$
 
  Вектор предельных вероятностей:
  \[
     \resizebox{\textwidth}{!}{$
-    \bar{p}= \left(  0.0, 0.0, 0.01, 0.0, 0.01, 0.0, 0.0, 0.01, 0.03, 0.0, 0.0, 0.01, 0.06, 0.01, 0.0, 0.01, 0.06, 0.1, 0.0, 0.09, 0.2, 0.04, 0.29, 0.07 \right)
+    \bar{p}= \left(  0.03, 0.01, 0.04, 0.0, 0.06, 0.01, 0.0, 0.03, 0.08, 0.01, 0.02, 0.13, 0.04, 0.0, 0.1, 0.14, 0.01, 0.0, 0.11, 0.08, 0.0, 0.07, 0.02 \right)
     $}
 \]
 
 Составим систему дифференциальных уравнений Колмогорова.
 \[
 \begin{cases}
-    P^\prime_{0} = 8P_{1} (t) +8P_{2} (t) -12P_{0} (t) -6P_{0} (t) \\ 
-P^\prime_{1} = 12P_{0} (t) +8P_{3} (t) -8P_{1} (t) -12P_{1} (t) -6P_{1} (t) \\ 
-P^\prime_{2} = 6P_{0} (t) +8P_{4} (t) +8P_{5} (t) -8P_{2} (t) -12P_{2} (t) -6P_{2} (t) \\ 
-P^\prime_{3} = 12P_{1} (t) +8P_{6} (t) -8P_{3} (t) -12P_{3} (t) -6P_{3} (t) \\ 
-P^\prime_{4} = 6P_{1} (t) +12P_{2} (t) +8P_{7} (t) +8P_{8} (t) -8P_{4} (t) -12P_{4} (t) -6P_{4} (t) \\ 
-P^\prime_{5} = 6P_{2} (t) +8P_{9} (t) -8P_{5} (t) -12P_{5} (t) -6P_{5} (t) \\ 
-P^\prime_{6} = 12P_{3} (t) +8P_{10} (t) -8P_{6} (t) -12P_{6} (t) -6P_{6} (t) \\ 
-P^\prime_{7} = 6P_{3} (t) +12P_{4} (t) +8P_{11} (t) -8P_{7} (t) -12P_{7} (t) -6P_{7} (t) \\ 
-P^\prime_{8} = 6P_{4} (t) +12P_{5} (t) +8P_{12} (t) +8P_{13} (t) -8P_{8} (t) -12P_{8} (t) -6P_{8} (t) \\ 
-P^\prime_{9} = 6P_{5} (t) +8P_{14} (t) -8P_{9} (t) -12P_{9} (t) -3P_{9} (t) \\ 
-P^\prime_{10} = 12P_{6} (t) -8P_{10} (t) \\ 
-P^\prime_{11} = 6P_{6} (t) +12P_{7} (t) +8P_{15} (t) -8P_{11} (t) -12P_{11} (t) -6P_{11} (t) \\ 
-P^\prime_{12} = 6P_{7} (t) +12P_{8} (t) +8P_{16} (t) +8P_{17} (t) -8P_{12} (t) -12P_{12} (t) -6P_{12} (t) \\ 
-P^\prime_{13} = 6P_{8} (t) +12P_{9} (t) +8P_{18} (t) -8P_{13} (t) -12P_{13} (t) -3P_{13} (t) \\ 
-P^\prime_{14} = 3P_{9} (t) -8P_{14} (t) \\ 
-P^\prime_{15} = 12P_{11} (t) -8P_{15} (t) \\ 
-P^\prime_{16} = 6P_{11} (t) +12P_{12} (t) +8P_{19} (t) -8P_{16} (t) -12P_{16} (t) -6P_{16} (t) \\ 
-P^\prime_{17} = 6P_{12} (t) +12P_{13} (t) +8P_{20} (t) +8P_{21} (t) -8P_{17} (t) -12P_{17} (t) -3P_{17} (t) \\ 
-P^\prime_{18} = 3P_{13} (t) -8P_{18} (t) \\ 
-P^\prime_{19} = 12P_{16} (t) -8P_{19} (t) \\ 
-P^\prime_{20} = 6P_{16} (t) +12P_{17} (t) +8P_{22} (t) +8P_{23} (t) -8P_{20} (t) -12P_{20} (t) -3P_{20} (t) \\ 
-P^\prime_{21} = 3P_{17} (t) -8P_{21} (t) \\ 
-P^\prime_{22} = 12P_{20} (t) -8P_{22} (t) \\ 
-P^\prime_{23} = 3P_{20} (t) -8P_{23} (t) 
+    P^\prime_{0} = 15P_{1} (t) +15P_{2} (t) -12P_{0} (t) -12P_{0} (t) \\ 
+P^\prime_{1} = 12P_{0} (t) +15P_{3} (t) -15P_{1} (t) -12P_{1} (t) -12P_{1} (t) \\ 
+P^\prime_{2} = 12P_{0} (t) +15P_{4} (t) +15P_{5} (t) -15P_{2} (t) -12P_{2} (t) -12P_{2} (t) \\ 
+P^\prime_{3} = 12P_{1} (t) +15P_{6} (t) -15P_{3} (t) -12P_{3} (t) -12P_{3} (t) \\ 
+P^\prime_{4} = 12P_{1} (t) +12P_{2} (t) +15P_{7} (t) +15P_{8} (t) -15P_{4} (t) -12P_{4} (t) -12P_{4} (t) \\ 
+P^\prime_{5} = 12P_{2} (t) +15P_{9} (t) -15P_{5} (t) -12P_{5} (t) -12P_{5} (t) \\ 
+P^\prime_{6} = 12P_{3} (t) -15P_{6} (t) \\ 
+P^\prime_{7} = 12P_{3} (t) +12P_{4} (t) +15P_{10} (t) -15P_{7} (t) -12P_{7} (t) -12P_{7} (t) \\ 
+P^\prime_{8} = 12P_{4} (t) +12P_{5} (t) +15P_{11} (t) +15P_{12} (t) -15P_{8} (t) -12P_{8} (t) -12P_{8} (t) \\ 
+P^\prime_{9} = 12P_{5} (t) +15P_{13} (t) -15P_{9} (t) -12P_{9} (t) -8P_{9} (t) \\ 
+P^\prime_{10} = 12P_{7} (t) -15P_{10} (t) \\ 
+P^\prime_{11} = 12P_{7} (t) +12P_{8} (t) +15P_{14} (t) +15P_{15} (t) -15P_{11} (t) -12P_{11} (t) -12P_{11} (t) \\ 
+P^\prime_{12} = 12P_{8} (t) +12P_{9} (t) +15P_{16} (t) -15P_{12} (t) -12P_{12} (t) -8P_{12} (t) \\ 
+P^\prime_{13} = 8P_{9} (t) +15P_{17} (t) -15P_{13} (t) -12P_{13} (t) -4P_{13} (t) \\ 
+P^\prime_{14} = 12P_{11} (t) -15P_{14} (t) \\ 
+P^\prime_{15} = 12P_{11} (t) +12P_{12} (t) +15P_{18} (t) +15P_{19} (t) -15P_{15} (t) -12P_{15} (t) -8P_{15} (t) \\ 
+P^\prime_{16} = 8P_{12} (t) +12P_{13} (t) +15P_{20} (t) -15P_{16} (t) -12P_{16} (t) -4P_{16} (t) \\ 
+P^\prime_{17} = 4P_{13} (t) -15P_{17} (t) \\ 
+P^\prime_{18} = 12P_{15} (t) -15P_{18} (t) \\ 
+P^\prime_{19} = 8P_{15} (t) +12P_{16} (t) +15P_{21} (t) +15P_{22} (t) -15P_{19} (t) -12P_{19} (t) -4P_{19} (t) \\ 
+P^\prime_{20} = 4P_{16} (t) -15P_{20} (t) \\ 
+P^\prime_{21} = 12P_{19} (t) -15P_{21} (t) \\ 
+P^\prime_{22} = 4P_{19} (t) -15P_{22} (t) 
 \end{cases}
 \]
 
@@ -768,9 +742,9 @@ $$1-R(t) = P_{term}(t)$$
 
 \begin{itemize}
     \item Математическое ожидание вероятности отказа:
-$\mathbb{E}[P(1-R_t(t))]=0.504282 $;
-\item Коэффициент загрузки ремонтной службы: $0.97531$;
-\item Среднее число готовых к эксплуатации устройств типа  A и B: $2.76, 4.48$ соответственно;
+$\mathbb{E}[P(1-R_t(t))]=0.326506 $;
+\item Коэффициент загрузки ремонтной службы: $0.89003$;
+\item Среднее число готовых к эксплуатации устройств типа  A и B: $-54.4, -54.58$ соответственно;
 \end{itemize}
 
 \subsubsection{Имитационное моделирование системы}
@@ -823,12 +797,12 @@ def MD(m):
 
 Для $N=100$:
 \begin{itemize}
-    \item Среднее $t$ выхода на установившийся режим работы $15.344707967658202$;
+    \item Среднее $t$ выхода на установившийся режим работы $7.047035827195446$;
 
     \item Статистические оценки предельных вероятностей после выхода на установившийся режим:
     \[
     \resizebox{\textwidth}{!}{$
-[0.23, 0.18, 0.08, 0.14, 0.07, 0.0, 0.1, 0.06, 0.0, 0.0, 0.07, 0.04, 0.0, 0.0, 0.0, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.44, 0.35, 0.0, 0.15, 0.0, 0.0, 0.06, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
      $}
 \]
 
@@ -852,180 +826,210 @@ def MD(m):
 Результаты моделирования при $N=1$:
 \scriptsize
 \begin{verbatim}
-Сломан B в момент времени 0.064 всего устройств типа А и В 4 5
-                                                  --------------> 4 4
-Починен B в момент времени 0.069 всего устройств типа А и В 4 4
-                                                  --------------> 4 5
-Сломан B в момент времени 0.074 всего устройств типа А и В 4 5
-                                                  --------------> 4 4
-Сломан B в момент времени 0.083 всего устройств типа А и В 4 4
+Сломан B в момент времени 0.025 всего устройств типа А и В 5 4
+                                                  --------------> 5 3
+Сломан A в момент времени 0.027 всего устройств типа А и В 5 3
                                                   --------------> 4 3
-Сломан B в момент времени 0.095 всего устройств типа А и В 4 3
-                                                  --------------> 4 2
-Сломан A в момент времени 0.202 всего устройств типа А и В 4 2
-                                                  --------------> 3 2
-Сломан B в момент времени 0.212 всего устройств типа А и В 3 2
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.217 всего устройств типа А и В 3 2
+Сломан A в момент времени 0.027 всего устройств типа А и В 4 3
                                                   --------------> 3 3
-Починен B в момент времени 0.231 всего устройств типа А и В 3 3
-                                                  --------------> 3 4
-Сломан B в момент времени 0.232 всего устройств типа А и В 3 4
+Сломан A в момент времени 0.048 всего устройств типа А и В 3 3
+                                                  --------------> 2 3
+Починен B в момент времени 0.065 всего устройств типа А и В 2 3
+                                                  --------------> 2 4
+Сломан B в момент времени 0.070 всего устройств типа А и В 2 4
+                                                  --------------> 2 3
+Починен A в момент времени 0.081 всего устройств типа А и В 2 3
                                                   --------------> 3 3
-Сломан B в момент времени 0.252 всего устройств типа А и В 3 3
-                                                  --------------> 3 2
-Сломан A в момент времени 0.263 всего устройств типа А и В 3 2
+Сломан A в момент времени 0.091 всего устройств типа А и В 3 3
+                                                  --------------> 2 3
+Починен A в момент времени 0.106 всего устройств типа А и В 2 3
+                                                  --------------> 3 3
+Сломан A в момент времени 0.110 всего устройств типа А и В 3 3
+                                                  --------------> 2 3
+Сломан B в момент времени 0.113 всего устройств типа А и В 2 3
                                                   --------------> 2 2
-Сломан B в момент времени 0.301 всего устройств типа А и В 2 2
+Починен B в момент времени 0.114 всего устройств типа А и В 2 2
+                                                  --------------> 2 3
+Сломан A в момент времени 0.123 всего устройств типа А и В 2 3
+                                                  --------------> 1 3
+Сломан A в момент времени 0.129 всего устройств типа А и В 1 3
                                                   --------------> пропуск события ввиду неработоспособности системы
-Сломан A в момент времени 0.317 всего устройств типа А и В 2 2
+Починен A в момент времени 0.131 всего устройств типа А и В 1 3
+                                                  --------------> 2 3
+Сломан A в момент времени 0.145 всего устройств типа А и В 2 3
+                                                  --------------> 1 3
+Починен B в момент времени 0.146 всего устройств типа А и В 1 3
+                                                  --------------> 1 4
+Сломан A в момент времени 0.151 всего устройств типа А и В 1 4
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Починен B в момент времени 0.182 всего устройств типа А и В 1 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа В
+Починен A в момент времени 0.186 всего устройств типа А и В 1 4
+                                                  --------------> 2 4
+Сломан A в момент времени 0.203 всего устройств типа А и В 2 4
+                                                  --------------> 1 4
+Починен B в момент времени 0.207 всего устройств типа А и В 1 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа В
+Сломан A в момент времени 0.209 всего устройств типа А и В 1 4
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Сломан B в момент времени 0.227 всего устройств типа А и В 1 4
+                                                  --------------> 1 3
+Сломан B в момент времени 0.234 всего устройств типа А и В 1 3
                                                   --------------> 1 2
-Починен B в момент времени 0.331 всего устройств типа А и В 1 2
+Починен A в момент времени 0.255 всего устройств типа А и В 1 2
+                                                  --------------> 2 2
+Починен A в момент времени 0.266 всего устройств типа А и В 2 2
+                                                  --------------> 3 2
+Сломан B в момент времени 0.267 всего устройств типа А и В 3 2
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Сломан A в момент времени 0.282 всего устройств типа А и В 3 2
+                                                  --------------> 2 2
+Сломан B в момент времени 0.291 всего устройств типа А и В 2 2
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Починен A в момент времени 0.300 всего устройств типа А и В 2 2
+                                                  --------------> 3 2
+Сломан B в момент времени 0.302 всего устройств типа А и В 3 2
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Починен B в момент времени 0.311 всего устройств типа А и В 3 2
+                                                  --------------> 3 3
+Сломан B в момент времени 0.312 всего устройств типа А и В 3 3
+                                                  --------------> 3 2
+Сломан A в момент времени 0.313 всего устройств типа А и В 3 2
+                                                  --------------> 2 2
+Починен A в момент времени 0.351 всего устройств типа А и В 2 2
+                                                  --------------> 3 2
+Сломан A в момент времени 0.351 всего устройств типа А и В 3 2
+                                                  --------------> 2 2
+Сломан B в момент времени 0.358 всего устройств типа А и В 2 2
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Сломан A в момент времени 0.366 всего устройств типа А и В 2 2
+                                                  --------------> 1 2
+Сломан B в момент времени 0.367 всего устройств типа А и В 1 2
+                                                  --------------> пропуск события ввиду неработоспособности системы
+Починен B в момент времени 0.372 всего устройств типа А и В 1 2
                                                   --------------> 1 3
-Починен B в момент времени 0.348 всего устройств типа А и В 1 3
+Сломан B в момент времени 0.388 всего устройств типа А и В 1 3
+                                                  --------------> 1 2
+Починен B в момент времени 0.397 всего устройств типа А и В 1 2
+                                                  --------------> 1 3
+Починен B в момент времени 0.415 всего устройств типа А и В 1 3
                                                   --------------> 1 4
-Сломан A в момент времени 0.352 всего устройств типа А и В 1 4
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.389 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан A в момент времени 0.392 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.425 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан B в момент времени 0.437 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Починен B в момент времени 0.438 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Починен B в момент времени 0.488 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 0.539 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 0.551 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 0.598 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан A в момент времени 0.617 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Сломан A в момент времени 0.647 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.759 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан B в момент времени 0.766 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Починен B в момент времени 0.769 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан A в момент времени 0.772 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Сломан A в момент времени 0.783 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.857 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан A в момент времени 0.882 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 0.935 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан B в момент времени 1.023 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Починен A в момент времени 1.029 всего устройств типа А и В 1 4
+Починен A в момент времени 0.416 всего устройств типа А и В 1 4
                                                   --------------> 2 4
-Починен B в момент времени 1.032 всего устройств типа А и В 2 4
-                                                  --------------> 2 5
-Починен A в момент времени 1.075 всего устройств типа А и В 2 5
-                                                  --------------> 3 5
-Сломан B в момент времени 1.079 всего устройств типа А и В 3 5
+Починен A в момент времени 0.420 всего устройств типа А и В 2 4
                                                   --------------> 3 4
-Сломан A в момент времени 1.082 всего устройств типа А и В 3 4
+Сломан A в момент времени 0.434 всего устройств типа А и В 3 4
                                                   --------------> 2 4
-Починен B в момент времени 1.094 всего устройств типа А и В 2 4
-                                                  --------------> 2 5
-Сломан A в момент времени 1.160 всего устройств типа А и В 2 5
-                                                  --------------> 1 5
-Сломан A в момент времени 1.171 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 1.184 всего устройств типа А и В 1 5
+Починен A в момент времени 0.438 всего устройств типа А и В 2 4
+                                                  --------------> 3 4
+Починен B в момент времени 0.440 всего устройств типа А и В 3 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 1.200 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 1.259 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан B в момент времени 1.284 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Сломан B в момент времени 1.299 всего устройств типа А и В 1 4
-                                                  --------------> 1 3
-Починен B в момент времени 1.320 всего устройств типа А и В 1 3
-                                                  --------------> 1 4
-Починен A в момент времени 1.347 всего устройств типа А и В 1 4
+Сломан B в момент времени 0.479 всего устройств типа А и В 3 4
+                                                  --------------> 3 3
+Сломан A в момент времени 0.485 всего устройств типа А и В 3 3
+                                                  --------------> 2 3
+Починен B в момент времени 0.487 всего устройств типа А и В 2 3
                                                   --------------> 2 4
-Сломан A в момент времени 1.358 всего устройств типа А и В 2 4
-                                                  --------------> 1 4
-Сломан A в момент времени 1.363 всего устройств типа А и В 1 4
+Сломан B в момент времени 0.490 всего устройств типа А и В 2 4
+                                                  --------------> 2 3
+Сломан B в момент времени 0.496 всего устройств типа А и В 2 3
+                                                  --------------> 2 2
+Починен A в момент времени 0.518 всего устройств типа А и В 2 2
+                                                  --------------> 3 2
+Починен A в момент времени 0.521 всего устройств типа А и В 3 2
+                                                  --------------> 4 2
+Починен B в момент времени 0.542 всего устройств типа А и В 4 2
+                                                  --------------> 4 3
+Починен A в момент времени 0.545 всего устройств типа А и В 4 3
+                                                  --------------> 5 3
+Починен A в момент времени 0.549 всего устройств типа А и В 5 3
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Сломан B в момент времени 0.550 всего устройств типа А и В 5 3
+                                                  --------------> 5 2
+Сломан A в момент времени 0.557 всего устройств типа А и В 5 2
+                                                  --------------> 4 2
+Починен A в момент времени 0.571 всего устройств типа А и В 4 2
+                                                  --------------> 5 2
+Сломан A в момент времени 0.583 всего устройств типа А и В 5 2
+                                                  --------------> 4 2
+Сломан A в момент времени 0.587 всего устройств типа А и В 4 2
+                                                  --------------> 3 2
+Починен A в момент времени 0.602 всего устройств типа А и В 3 2
+                                                  --------------> 4 2
+Сломан A в момент времени 0.605 всего устройств типа А и В 4 2
+                                                  --------------> 3 2
+Сломан B в момент времени 0.605 всего устройств типа А и В 3 2
                                                   --------------> пропуск события ввиду неработоспособности системы
-Сломан B в момент времени 1.455 всего устройств типа А и В 1 4
-                                                  --------------> 1 3
-Починен B в момент времени 1.481 всего устройств типа А и В 1 3
-                                                  --------------> 1 4
-Починен B в момент времени 1.494 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан B в момент времени 1.509 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Сломан A в момент времени 1.514 всего устройств типа А и В 1 4
+Сломан B в момент времени 0.623 всего устройств типа А и В 3 2
                                                   --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 1.533 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан A в момент времени 1.540 всего устройств типа А и В 1 5
+Сломан B в момент времени 0.652 всего устройств типа А и В 3 2
                                                   --------------> пропуск события ввиду неработоспособности системы
-Сломан A в момент времени 1.583 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Сломан B в момент времени 1.600 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Сломан A в момент времени 1.626 всего устройств типа А и В 1 4
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Сломан A в момент времени 1.679 всего устройств типа А и В 1 4
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 1.735 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан B в момент времени 1.739 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Починен B в момент времени 1.742 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Починен B в момент времени 1.746 всего устройств типа А и В 1 5
+Починен B в момент времени 0.662 всего устройств типа А и В 3 2
+                                                  --------------> 3 3
+Починен A в момент времени 0.669 всего устройств типа А и В 3 3
+                                                  --------------> 4 3
+Починен A в момент времени 0.679 всего устройств типа А и В 4 3
+                                                  --------------> 5 3
+Починен A в момент времени 0.680 всего устройств типа А и В 5 3
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Починен B в момент времени 0.680 всего устройств типа А и В 5 3
+                                                  --------------> 5 4
+Починен A в момент времени 0.681 всего устройств типа А и В 5 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Сломан A в момент времени 0.696 всего устройств типа А и В 5 4
+                                                  --------------> 4 4
+Сломан A в момент времени 0.709 всего устройств типа А и В 4 4
+                                                  --------------> 3 4
+Починен B в момент времени 0.737 всего устройств типа А и В 3 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан B в момент времени 1.746 всего устройств типа А и В 1 5
-                                                  --------------> 1 4
-Починен B в момент времени 1.779 всего устройств типа А и В 1 4
-                                                  --------------> 1 5
-Сломан A в момент времени 1.819 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен B в момент времени 1.879 всего устройств типа А и В 1 5
+Починен A в момент времени 0.755 всего устройств типа А и В 3 4
+                                                  --------------> 4 4
+Починен A в момент времени 0.766 всего устройств типа А и В 4 4
+                                                  --------------> 5 4
+Сломан B в момент времени 0.767 всего устройств типа А и В 5 4
+                                                  --------------> 5 3
+Починен A в момент времени 0.772 всего устройств типа А и В 5 3
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Починен A в момент времени 0.791 всего устройств типа А и В 5 3
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Сломан A в момент времени 0.807 всего устройств типа А и В 5 3
+                                                  --------------> 4 3
+Починен B в момент времени 0.824 всего устройств типа А и В 4 3
+                                                  --------------> 4 4
+Починен A в момент времени 0.825 всего устройств типа А и В 4 4
+                                                  --------------> 5 4
+Починен B в момент времени 0.828 всего устройств типа А и В 5 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 1.887 всего устройств типа А и В 1 5
+Починен B в момент времени 0.837 всего устройств типа А и В 5 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан A в момент времени 1.896 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду неработоспособности системы
-Починен A в момент времени 2.011 всего устройств типа А и В 1 5
-                                                  --------------> 2 5
-Починен B в момент времени 2.022 всего устройств типа А и В 2 5
+Починен A в момент времени 0.854 всего устройств типа А и В 5 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Починен A в момент времени 0.860 всего устройств типа А и В 5 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Починен A в момент времени 0.880 всего устройств типа А и В 5 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Починен A в момент времени 0.887 всего устройств типа А и В 5 4
+                                                  --------------> пропуск события ввиду исправности всех устройств типа А
+Сломан A в момент времени 0.895 всего устройств типа А и В 5 4
+                                                  --------------> 4 4
+Починен A в момент времени 0.900 всего устройств типа А и В 4 4
+                                                  --------------> 5 4
+Починен B в момент времени 0.921 всего устройств типа А и В 5 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Сломан A в момент времени 2.033 всего устройств типа А и В 2 5
-                                                  --------------> 1 5
-Починен B в момент времени 2.035 всего устройств типа А и В 1 5
+Починен B в момент времени 0.922 всего устройств типа А и В 5 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 2.035 всего устройств типа А и В 1 5
+Починен B в момент времени 0.942 всего устройств типа А и В 5 4
                                                   --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 2.037 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен B в момент времени 2.051 всего устройств типа А и В 1 5
-                                                  --------------> пропуск события ввиду исправности всех устройств типа В
-Починен A в момент времени 2.053 всего устройств типа А и В 1 5
-                                                  --------------> 2 5
+Сломан B в момент времени 0.953 всего устройств типа А и В 5 4
+                                                  --------------> 5 3
 
 \end{verbatim}
 \normalsize
 
 Статистические данные при $N=100$:
 \begin{itemize}
-    \item Cреднее число готовых к эксплуатации устройств типа A и B = $ 2.93, 4.15 $,
-    \item Среднее время выхода в установившийся режим работы = $ 3.0165070487790744 $
+    \item Cреднее число готовых к эксплуатации устройств типа A и B = $ 3.64, 3.19 $,
+    \item Среднее время выхода в установившийся режим работы = $ 2.2826470701556842 $
 \end{itemize}
 %-------------------------------------------------
 \subsection{Вывод}
