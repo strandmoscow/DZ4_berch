@@ -3,6 +3,7 @@ import numpy as np
 from scipy.spatial import distance
 
 np.random.seed(0)
+eps = 0.005
 
 class Unit:
     def __init__(self, typeUnit, lambda_breakdown, lambda_repair):
@@ -26,10 +27,9 @@ def discrete_event_based(la, lb, ls, Ra, Rb, Na, Nb, pr, i, s):
     cur_time = 0
     broken_A, broken_B = 0, 0
 
-
     def make_event(pos, A_working, A_stock, A_broken, B_working, B_stock, B_broken, broken_A, broken_B, pr, i):
         s = ''
-        event=events[pos][1]
+        event = events[pos][1]
         if i == 0:
             s = s + str(event) + " в момент времени %.3f " % events[pos][0] + "всего устройств типа А и В " + str(len(A_working)+len(A_stock)) + " " + str(len(B_working)+len(B_stock)) + '\n'
         if pr:
@@ -75,6 +75,7 @@ def discrete_event_based(la, lb, ls, Ra, Rb, Na, Nb, pr, i, s):
 
         elif event == 'Починен A':
             if len(A_working) == Na and len(A_stock) == Ra-Na:
+                events.pop(pos)
                 if i == 0:
                     s = s + " " * 50 + "--------------> пропуск события ввиду исправности всех устройств типа А\n"
                 if pr:
@@ -89,6 +90,7 @@ def discrete_event_based(la, lb, ls, Ra, Rb, Na, Nb, pr, i, s):
 
         elif event == 'Починен B':
             if len(B_working) == Nb and len(B_stock) == Rb-Nb:
+                events.pop(pos)
                 if i == 0:
                     s = s + " " * 50 + "--------------> пропуск события ввиду исправности всех устройств типа В\n"
                 if pr:
@@ -134,12 +136,12 @@ def discrete_event_based(la, lb, ls, Ra, Rb, Na, Nb, pr, i, s):
     while 1:
         working = units_A_working + units_B_working
         broken = units_A_broken + units_B_broken
-        cur_time, cur_pos=plan_event(working, broken, cur_time, cur_pos)
+        cur_time, cur_pos = plan_event(working, broken, cur_time, cur_pos)
         units_A_working, units_A_stock, units_A_broken, units_B_working, units_B_stock, units_B_broken, broken_A, broken_B, sl = \
             make_event(cur_pos-1, units_A_working, units_A_stock, units_A_broken, units_B_working, units_B_stock, units_B_broken, broken_A, broken_B, pr, i)
         stat_broken_a_b.append([broken_A, broken_B])
         s = s + sl
-        if (distance.euclidean(np.mean(stat_broken_a_b, axis=0), np.mean(last_stat, axis=0)) < 0.005) * (not Flag):
+        if (distance.euclidean(np.mean(stat_broken_a_b, axis=0), np.mean(last_stat, axis=0)) < eps) * (not Flag):
             Flag = True
             t_term = events[cur_pos][0]
             stat_broken_a_b = [[broken_A, broken_B]]
@@ -156,7 +158,8 @@ def imitational_modeling(N, la, lb, ls, Ra, Rb, Na, Nb, pr=False):
     s = ""
     for i in tqdm(range(N)):
         t_term, stat_br, s = discrete_event_based(la, lb, ls, Ra, Rb, Na, Nb, pr, i, s)
-        stat_w_a_b.append([Ra-stat_br[0], Rb-stat_br[1]])
+        # print(stat_br)
+        stat_w_a_b.append([Na-stat_br[0]+1, Nb-stat_br[1]+1])
         stat_t_term.append(t_term)
 
     print("среднее число готовых к эксплуатации устройств типа  A и B ",

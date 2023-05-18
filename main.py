@@ -7,7 +7,7 @@ import re
 from tqdm import tqdm
 import modeling
 
-name, var, g = "Мягкова Екатерина Игоревна",	46,	    2
+name, var, g = 'Федорова Елизавета Константиновна', 272, 6
 n = var
 name_short = name.split(" ")[0] + " " + name.split(" ")[1][0] + ". " + name.split(" ")[2][0] + "."
 
@@ -606,20 +606,15 @@ def MD(m):
 
         flag = 0
         for i in range(line.index(np.min(line)), len(line)):
+            if line[i] > 0 and flag == 1:
+                la.append(line[i])
+                la.append(i)
+                return lb, la, ls
+
             if line[i] > 0 and flag == 0:
                 lb.append(line[i])
                 lb.append(i)
                 flag = 1
-
-            if line[i] > 0 and flag == 1:
-                la.append(line[i])
-                la.append(i)
-
-        return lb, la, ls
-
-
-
-
 
     def F_t(l, y):
         return -np.log(1 - y) / l
@@ -637,6 +632,7 @@ def MD(m):
 
     while 1:
         l_b, l_a, l_s = find_lambda(m[current_s])
+        # print(l_b, l_a, l_s)
         t_cur_s = F_t(l_a[0] + l_b[0] + l_s[0],
                       np.random.uniform(low=0.0, high=1.0, size=None))  # -log(1-y)/(lambda_a+lambda_b)
 
@@ -679,10 +675,8 @@ def MD(m):
             flag = True
             t_ust = current_t
             times = np.zeros(len(m))  # сбрасываем
-            d_A = w_A[-1]
-            d_B = w_B[-1]
-            w_A = [d_A]
-            w_B = [d_B]
+            w_A = w_A[-1::]
+            w_B = w_B[-1::]
 
         if flag * (current_t > t_ust * 2):
             # print(w_A)
@@ -739,11 +733,10 @@ if __name__ == "__main__":
     if l_A == l_B:
         l_A = l_A + 1
 
-
     graph_dot_ls, paths = graph(Ra - Na, Rb - Nb, Na, Nb, l_A, l_B)
     graph_for_t, _ = graph_for_tex(Ra - Na, Rb - Nb, Na, Nb, l_A, l_B)
     # graph_dot_ls = graph_ls(graph_dot, paths, l_A, l_B)
-    print(graph_dot_ls.to_string())
+    # print(graph_dot_ls.to_string())
 
     matrix_np = matrix(l_A, l_B, l_S, graph_dot_ls)
     matrix = matrix_np.tolist()
